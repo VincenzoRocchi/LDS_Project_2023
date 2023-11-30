@@ -1,0 +1,55 @@
+GunID,IsStolen,GunType
+1,1,Shotgun
+2,1,380 Auto
+3,0,Irrelevant
+4,1,Handgun
+5,1,9mm
+6,1,45 Auto
+7,1,Unknown
+8,0,Handgun
+9,1,7.62 [AK-47]
+10,1,22 LR
+11,1,Rifle
+12,1,223 Rem [AR-15]
+13,1,40 SW
+14,1,38 Spl
+15,0,9mm
+16,0,45 Auto
+17,1,32 Auto
+18,0,22 LR
+19,0,Shotgun
+20,1,357 Mag
+21,0,12 gauge
+22,1,Other
+23,0,Rifle
+24,0,Unknown
+25,1,44 Mag
+26,0,40 SW
+27,1,12 gauge
+28,1,25 Auto
+29,0,357 Mag
+30,1,20 gauge
+31,1,30-30 Win
+32,0,223 Rem [AR-15]
+33,0,380 Auto
+34,0,25 Auto
+35,0,38 Spl
+36,0,7.62 [AK-47]
+37,0,410 gauge
+38,0,Other
+39,0,32 Auto
+40,0,20 gauge
+41,1,308 Win
+42,0,308 Win
+43,1,410 gauge
+44,1,30-06 Spr
+45,1,16 gauge
+46,0,10mm
+47,0,30-30 Win
+48,0,16 gauge
+49,1,10mm
+50,0,44 Mag
+51,1,300 Win
+52,0,30-06 Spr
+53,1,28 gauge
+54,0,300 Win
