@@ -13,8 +13,6 @@ def find_column_number(file_path, target_column_name):
     return column_number
 
 
-import csv
-
 def find_column_numbers(file_path, target_column_names):
     # Open the CSV file and read the first row
     with open(file_path, 'r') as file:
