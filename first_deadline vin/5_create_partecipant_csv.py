@@ -10,10 +10,10 @@ with open('DATA\dict_partecipant_type.json', 'r') as type_file:
     type_data = json.load(type_file)
 
 # Open the CSV file for writing
-with open('DATA\Partecipant.csv', 'w', newline='') as participant_csv:
+with open('DATA\Participant.csv', 'w', newline='') as participant_csv:
     
     participant_writer = csv.writer(participant_csv)
-    participant_writer.writerow(['PartecipantID', 'AgeGroup', 'Gender', 'Status', 'Type'])
+    participant_writer.writerow(['ParticipantID', 'AgeGroup', 'Gender', 'Status', 'Type'])
 
     with open('DATA\Police.csv', 'r') as csv_file:
         csv_reader = csv.reader(csv_file)
