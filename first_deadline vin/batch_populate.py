@@ -7,6 +7,8 @@ from populating_functions import (
     populate_participant_from_csv_batch
 )
 
+from populating_functions import populate_custody_from_csv_batch
+
 # Connection data
 server = 'tcp:lds.di.unipi.it'
 username = 'Group_ID_183'

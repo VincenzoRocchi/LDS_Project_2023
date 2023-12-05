@@ -1,7 +1,6 @@
 #useful functions to improve usability among other scripts
 import csv
 
-
 if __name__ == '__main__':
     
     def find_column_number(file_path, target_column_name):
