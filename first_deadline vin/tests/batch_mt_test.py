@@ -1,7 +1,7 @@
-
 import csv
 import pyodbc
-import tqdm
+from tqdm import tqdm
+from concurrent.futures import ThreadPoolExecutor
 
 # delete the contents of a table
 def delete_table_contents(connection, table_name):
