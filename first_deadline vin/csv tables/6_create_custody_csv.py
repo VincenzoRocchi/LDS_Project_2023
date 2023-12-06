@@ -55,7 +55,7 @@ with open('DATA\dict_partecipant_age.json', 'r') as age_file, \
                 participant_id = participant_data.get(participant_key)
 
                 # Find the gun ID
-                gun_stolen_bit = 1 if gun_stolen == 'IsStolen' else 0
+                gun_stolen_bit = 1 if gun_stolen == 'Stolen' else 0
                 gun_key = (gun_stolen_bit, gun_type)
                 gun_id = gun_data.get(gun_key)
 
