@@ -19,7 +19,9 @@ def populate_table_from_csv_batch(cursor, table_name, file_path, batch_size):
         try:
             for i in range(0, len(rows), batch_size):
                 batch = rows[i:i + batch_size]
-                execute_many(cursor, f'INSERT INTO {table_name} VALUES (?, ?, ?, ?, ?, ?)', batch)
+                num_columns = len(batch[0])
+                placeholders = ', '.join(['?'] * num_columns)
+                execute_many(cursor, f'INSERT INTO {table_name} VALUES ({placeholders})', batch)
                 pbar.update(len(batch))
         except pyodbc.Error as e:
             print(f"Error: {e}")
@@ -52,7 +54,7 @@ if __name__ == '__main__':
         populate_table_from_csv_batch(cursor, 'Geography', 'DATA/Geography.csv', batch_size=10000)
         populate_table_from_csv_batch(cursor, 'Gun', 'DATA/Gun.csv', batch_size=1000)
         populate_table_from_csv_batch(cursor, 'Date', 'DATA/Date.csv', batch_size=1000)
-        populate_table_from_csv_batch(cursor, 'Incident', 'DATA/Incident.csv', batch_size=1000)
+        populate_table_from_csv_batch(cursor, 'Incident', 'DATA/Incident.csv', batch_size=10000)
         populate_table_from_csv_batch(cursor, 'Participant', 'DATA/Participant.csv', batch_size=1000)
         populate_table_from_csv_batch(cursor, 'Custody', 'DATA/Custody.csv', batch_size=1000)
 
