@@ -28,6 +28,7 @@ if __name__ == '__main__':
 
 
     def calculate_crime_gravity(participant_age, participant_type, participant_status, age_data, type_data, status_data):
+        
         F1 = age_data.get(participant_age, 1.0)  # Default to 1.0 if not found
         F2 = type_data.get(participant_type, 1.0)
         F3 = status_data.get(participant_status, 1.0)
@@ -35,3 +36,24 @@ if __name__ == '__main__':
         # Calculate crime gravity using the provided formula
         crime_gravity = F1 * F2 * F3
         return crime_gravity
+    
+    def delete_table_contents(connection, table_name):
+        try:
+            # Create a cursor from the connection
+            cursor = connection.cursor()
+
+            # Execute the DELETE statement
+            delete_query = f'DELETE FROM {table_name}'
+            cursor.execute(delete_query)
+
+            # Commit the transaction
+            connection.commit()
+
+            print(f'Contents of table {table_name} deleted successfully.')
+
+        except pyodbc.Error as e:
+            print(f'Error: {e}')
+
+        finally:
+            # Close the cursor (connection will be closed outside the function)
+            cursor.close()

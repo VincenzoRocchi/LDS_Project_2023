@@ -22,7 +22,6 @@ def populate_gun_from_csv_batch(file_path, batch_size=100):
 
     conn.commit()
     
-
 # Connection data
 server = 'tcp:lds.di.unipi.it'
 username = 'Group_ID_183'

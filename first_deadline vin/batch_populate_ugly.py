@@ -2,7 +2,28 @@ import csv
 import pyodbc
 from tqdm import tqdm
 
-def populate_custody_from_csv_batch(file_path, batch_size=100):
+def delete_table_contents(connection, table_name):
+    try:
+        # Create a cursor from the connection
+        cursor = connection.cursor()
+
+        # Execute the DELETE statement
+        delete_query = f'DELETE FROM {table_name}'
+        cursor.execute(delete_query)
+
+        # Commit the transaction
+        connection.commit()
+
+        print(f'Contents of table {table_name} deleted successfully.')
+
+    except pyodbc.Error as e:
+        print(f'Error: {e}')
+
+    finally:
+        # Close the cursor (connection will be closed outside the function)
+        cursor.close()
+            
+def populate_custody_from_csv_batch(file_path, batch_size=1000):
     with open(file_path, 'r') as csvfile:
         csv_reader = csv.reader(csvfile)
         
@@ -32,7 +53,7 @@ def populate_custody_from_csv_batch(file_path, batch_size=100):
             # Update the progress bar
             pbar.update(len(batch))
 
-def populate_geography_from_csv_batch(file_path, batch_size=100):
+def populate_geography_from_csv_batch(file_path, batch_size=1000):
     with open(file_path, 'r') as csvfile:
         csv_reader = csv.reader(csvfile)
         
@@ -62,7 +83,7 @@ def populate_geography_from_csv_batch(file_path, batch_size=100):
             # Update the progress bar
             pbar.update(len(batch))
 
-def populate_gun_from_csv_batch(file_path, batch_size=100):
+def populate_gun_from_csv_batch(file_path, batch_size=1000):
     with open(file_path, 'r') as csvfile:
         csv_reader = csv.reader(csvfile)
         
@@ -89,7 +110,7 @@ def populate_gun_from_csv_batch(file_path, batch_size=100):
             # Update the progress bar
             pbar.update(len(batch))
 
-def populate_date_from_csv_batch(file_path, batch_size=100):
+def populate_date_from_csv_batch(file_path, batch_size=1000):
     with open(file_path, 'r') as csvfile:
         csv_reader = csv.reader(csvfile)
         
@@ -119,7 +140,7 @@ def populate_date_from_csv_batch(file_path, batch_size=100):
             # Update the progress bar
             pbar.update(len(batch))
 
-def populate_incident_from_csv_batch(file_path, batch_size=100):
+def populate_incident_from_csv_batch(file_path, batch_size=1000):
     with open(file_path, 'r') as csvfile:
         csv_reader = csv.reader(csvfile)
         
@@ -145,7 +166,7 @@ def populate_incident_from_csv_batch(file_path, batch_size=100):
             # Update the progress bar
             pbar.update(len(batch))
             
-def populate_participant_from_csv_batch(file_path, batch_size=100):
+def populate_participant_from_csv_batch(file_path, batch_size=1000):
     with open(file_path, 'r') as csvfile:
         csv_reader = csv.reader(csvfile)
         
@@ -187,18 +208,23 @@ conn_str = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};DATABASE={
 conn = pyodbc.connect(conn_str)
 cursor = conn.cursor()
 
-populate_custody_from_csv_batch('DATA/Custody.csv')
-
+delete_table_contents(conn, 'Geography') # Delete the contents of the table before populating it
 populate_geography_from_csv_batch('DATA/Geography.csv')
 
+delete_table_contents(conn, 'Gun')  # Delete the contents of the table before populating it
 populate_gun_from_csv_batch('DATA/Gun.csv')
 
+delete_table_contents(conn, 'Date')  # Delete the contents of the table before populating it
 populate_date_from_csv_batch('DATA/Date.csv')
 
+delete_table_contents(conn, 'Incident')  # Delete the contents of the table before populating it
 populate_incident_from_csv_batch('DATA/Incident.csv',)
 
+delete_table_contents(conn, 'Participant')  # Delete the contents of the table before populating it
 populate_participant_from_csv_batch('DATA/Partecipant.csv')
 
+delete_table_contents(conn, 'Custody')  # Delete the contents of the table before populating it
+populate_custody_from_csv_batch('DATA/Custody.csv')
 
 cursor.close()
 conn.close()
