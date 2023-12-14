@@ -12,9 +12,9 @@ def calculate_crime_gravity(participant_age, participant_type, participant_statu
     crime_gravity = F1 * F2 * F3
     return crime_gravity
 
-with open('dict_partecipant_age.json', 'r') as age_file, \
-     open('dict_partecipant_status.json', 'r') as status_file, \
-     open('dict_partecipant_type.json', 'r') as type_file, \
+with open('DATA/dict_partecipant_age.json', 'r') as age_file, \
+     open('DATA/dict_partecipant_status.json', 'r') as status_file, \
+     open('DATA/dict_partecipant_type.json', 'r') as type_file, \
      open('Geography.csv', 'r') as geo_csv, \
      open('Gun.csv', 'r') as gun_csv, \
      open('Participant.csv', 'r') as participant_csv, \
@@ -57,7 +57,7 @@ with open('dict_partecipant_age.json', 'r') as age_file, \
                 gun_stolen_bit = 1 if gun_stolen == 'IsStolen' else 0
                 gun_key = (gun_stolen_bit, gun_type)
                 gun_id = gun_data.get(gun_key)
-
+                
                 # Find the geography ID
                 geo_key = (latitude, longitude)
                 geo_id = geo_data.get(geo_key)

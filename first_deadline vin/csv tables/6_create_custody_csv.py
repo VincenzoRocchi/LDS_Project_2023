@@ -40,7 +40,7 @@ with open('DATA\dict_partecipant_age.json', 'r') as age_file, \
         csv_reader = csv.reader(csv_file)
         custody_writer = csv.writer(custody_csv)
         # Write the header row
-        custody_writer.writerow(['CustodyID', 'ParticipantID', 'GunID', 'GeographyID', 'DateID', 'CrimeGravity'])
+        custody_writer.writerow(['CustodyID', 'ParticipantID', 'GunID', 'GeographyID', 'DateID', 'CrimeGravity', 'IncidentID'])
         next(csv_reader)  # Skip the header row in the input file
         
         for row in tqdm(csv_reader):
@@ -72,7 +72,7 @@ with open('DATA\dict_partecipant_age.json', 'r') as age_file, \
                 if participant_id is not None:
                     custody_id_set.add(custody_id)
                     # Write the row to the custody CSV file
-                    custody_writer.writerow([custody_id, participant_id, gun_id, geo_id, date_id, crime_gravity])
+                    custody_writer.writerow([custody_id, participant_id, gun_id, geo_id, date_id, crime_gravity, incident_id])
                 else:
                     print("Null partecipant ID: " + custody_id)
             else:

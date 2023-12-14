@@ -6,7 +6,7 @@ CREATE TABLE Custody (
     geo_id INT,
     date_id INT,
     crime_gravity DECIMAL(18, 2), -- Adjust the data type as needed
-    -- Add other columns as needed
+    incident_id INT,
 );
 GO
 
@@ -84,4 +84,10 @@ ALTER TABLE Custody
 ADD CONSTRAINT FK_Custody_Date
 FOREIGN KEY (date_id)
 REFERENCES Date(date_id);
+GO
+
+ALTER TABLE Custody
+ADD CONSTRAINT FK_Custody_Incident
+FOREIGN KEY (incident_id)
+REFERENCES Incident(incident_id);
 GO

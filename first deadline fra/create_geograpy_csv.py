@@ -1,11 +1,45 @@
 if __name__ == '__main__':
     import csv
     import reverse_geocoder as rg
+    import io
+
+    # Define the input and output file paths
+    input_file = 'DATA/uscities.csv'
+    output_file = 'DATA/uscities_rg.csv'
+
+    # Define the header mapping
+    header_mapping = {
+        "lat": "lat",
+        "lon": "lng",
+        "name": "city",
+        "admin1": "state_name",
+        "admin2": "county_name",
+    }
+
+    # Read the input CSV file and write to the output CSV file with the new format
+    with open(input_file, 'r') as csv_input, open(output_file, 'w', newline='') as csv_output:
+        reader = csv.DictReader(csv_input)
+        fieldnames = list(header_mapping.keys()) + ['cc']
+        
+        # Write the new header
+        csv_writer = csv.DictWriter(csv_output, fieldnames=fieldnames)
+        csv_writer.writeheader()
+
+        # Transform and write each row
+        for row in reader:
+            new_row = {new_key: row[old_key] for new_key, old_key in header_mapping.items()}
+            new_row['cc'] = 'US'  # Set 'cc' to 'US' for the ISO 3166-1 alpha-2 country code for the USA
+            csv_writer.writerow(new_row)
+    
+    print("CSV transformation complete.")
+
+    geo = rg.RGeocoder(mode=2, verbose=True, stream=io.StringIO(open('DATA/uscities_rg.csv', encoding='utf-8').read()))
+
     # Create a dictionary to map geography_id
     geography_id_dict = {}
 
     # Open the CSV file for writing
-    with open('Geography.csv', 'w', newline='') as geo_csv:
+    with open('DATA/Geography1.csv', 'w', newline='') as geo_csv:
         # Remove the contents of the CSV file
         geo_csv.truncate(0)
         fieldnames = ['GeographyID', 'Latitude', 'Longitude', 'City', 'State', 'Continent']
@@ -14,7 +48,7 @@ if __name__ == '__main__':
 
         # Extract unique coordinates from the Police.csv
         unique_coordinates = set()
-        with open('Police.csv', 'r') as csv_file:
+        with open('DATA/Police.csv', 'r') as csv_file:
             csv_reader = csv.reader(csv_file)
             next(csv_reader)  # Skip the header row
 
@@ -23,7 +57,7 @@ if __name__ == '__main__':
                 unique_coordinates.add((latitude, longitude))
 
         # Perform a single search in reverse geocoder for all unique coordinates
-        results = rg.search(list(unique_coordinates))
+        results = geo.query(list(unique_coordinates))
 
         # Write data to the CSV file
         for i, row in enumerate(results):

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="custodies_by_year_flat"
   DTS:PackageType="5"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{3510CB03-7368-49C8-801B-7D107051C431}">
+  DTS:VersionBuild="22"
+  DTS:VersionGUID="{FF03AE62-F7AC-4ABC-B350-80D0370D03E6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -52,12 +52,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=lds.di.unipi.it;User ID=Group_ID_183;Initial Catalog=Group_ID_183_DB;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{40A8A182-BC4D-4BBB-8132-BCF529C43948}lds.di.unipi.it.Group_ID_183_DB.Group_ID_183;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdcvJTPDb/kyOAnDYH3tlOAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAB9nhqwJlIWmf6uld2QlFDtaqv7TF9+hrgurz9EkCFsAAAAAAOgAAAAAIAACAAAADhcXyJv1kHUdCCHX1k0AhsEiL6trmjqmZ0rO/+3MTr2yAAAABphzI49NXHkZfPvyKg41qlEOXEMozIQ8+rzs9i1a/UbEAAAABSmkZ977fuTB0o0PXlNfNYzqqm3fQ1F2NIVeoscrDT+lhNObwilLVSKNEyZCbGDxG65hLayEs3gPrqy/4aNIMJ</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=lds.di.unipi.it;User ID=Group_ID_183;Initial Catalog=Group_ID_183_DB;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{40A8A182-BC4D-4BBB-8132-BCF529C43948}lds.di.unipi.it.Group_ID_183_DB.Group_ID_183;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -633,7 +628,7 @@ where [refTable].[date_id] = ?</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="151,42"
+          Size="151.2,41.6"
           Id="Package\Data Flow Task"
           TopLeft="52,33" />
       </GraphLayout>
@@ -645,13 +640,21 @@ where [refTable].[date_id] = ?</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="142,42"
+          Size="112.8,41.6"
+          Id="Package\Data Flow Task\Lookup"
+          TopLeft="192,213" />
+        <NodeLayout
+          Size="142.4,41.6"
           Id="Package\Data Flow Task\custody fetch"
           TopLeft="72,49" />
         <NodeLayout
-          Size="113,42"
-          Id="Package\Data Flow Task\Lookup"
-          TopLeft="192,213" />
+          Size="127.2,41.6"
+          Id="Package\Data Flow Task\Aggregate"
+          TopLeft="159,332" />
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\Data Flow Task\Flat File Destination"
+          TopLeft="195,450" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
           TopLeft="143,91">
@@ -686,10 +689,6 @@ where [refTable].[date_id] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="127,42"
-          Id="Package\Data Flow Task\Aggregate"
-          TopLeft="159,332" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Lookup Match Output]"
           TopLeft="248.5,255">
@@ -726,10 +725,6 @@ where [refTable].[date_id] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Data Flow Task\Flat File Destination"
-          TopLeft="195,450" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Aggregate Output 1]"
           TopLeft="222.5,374">
@@ -768,25 +763,12 @@ where [refTable].[date_id] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\custody fetch">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\Lookup">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -796,10 +778,23 @@ where [refTable].[date_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\custody fetch">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

@@ -8,8 +8,20 @@
         <UseWinAuth>false</UseWinAuth>
         <WinAuthUserName />
         <WinAuthDomain />
-        <UserIDs />
-        <UserPasswords />
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>{40A8A182-BC4D-4BBB-8132-BCF529C43948}</Id>
+            <Name>{40A8A182-BC4D-4BBB-8132-BCF529C43948}</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAttPXBMzooUyaeFXdhLsdHwAAAABOAAAAewA0ADAAQQA4AEEAMQA4ADIALQBCAEMANABEAC0ANABCAEIAQgAtADgAMQAzADIALQBCAEMARgA1ADIAOQBDADQAMwA5ADQAOAB9AAAAEGYAAAABAAAgAAAASfgEUIqL3/w28TDo9j4Ai4IxPKubnXkx13q1eRKm7AoAAAAADoAAAAACAAAgAAAAWA8NSmuTwlqyhxY1QhmN9OXYDVblg3Skyx8iYeTAT7AgAAAAeaD5jIwx4CvF6uv9udWak5WlTOFrRrG776VH9lidgjdAAAAAwF9cjI1WwtuATxUaMf7HCy41ngl0MN2eQjaeTPoqm92+ZBUshDnpiFJpW+/okYJnUwsuNvENRKaJdI1ELvd7iQ==</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>{40A8A182-BC4D-4BBB-8132-BCF529C43948}</Id>
+            <Name>{40A8A182-BC4D-4BBB-8132-BCF529C43948}</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAttPXBMzooUyaeFXdhLsdHwAAAABOAAAAewA0ADAAQQA4AEEAMQA4ADIALQBCAEMANABEAC0ANABCAEIAQgAtADgAMQAzADIALQBCAEMARgA1ADIAOQBDADQAMwA5ADQAOAB9AAAAEGYAAAABAAAgAAAA4F7KJUniy9oCyhGMwQDlcZzaWKNTVjVGp7qc4oD3qM8AAAAADoAAAAACAAAgAAAA/LRxVDYgyTkXGGVbk9iPHpnY+TjkbrBL3TDHdd4vxIEgAAAAykNN/tCUMTIRHUDjilmWthdgXBTbVI69MzIExBuqjp5AAAAAR7rOuVVof40OaRXpIspyKe9sBv8vEVKwuq0d8fo2kDleED6NgNmlmo/KY7KPDw1wpHkPSQe+mflZgoDaC8uKog==</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
         <OfflineMode>false</OfflineMode>
         <ProgressReporting>true</ProgressReporting>
         <ParameterConfigurationSensitiveValues>
