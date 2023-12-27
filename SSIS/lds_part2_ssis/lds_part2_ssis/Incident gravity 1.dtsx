@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="NANO-PC"
   DTS:CreatorName="NANO-PC\franc"
-  DTS:DTSID="{3BA7E636-824C-4EB8-9B68-EC17618D6F1E}"
+  DTS:DTSID="{0E272761-09F0-45A0-A567-D18720DF38A4}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5314.0"
   DTS:LocaleID="1040"
   DTS:ObjectName="Incident gravity"
   DTS:PackageType="5"
-  DTS:VersionBuild="31"
-  DTS:VersionGUID="{02DAC189-4BCC-4A02-BD46-D87414771355}">
+  DTS:VersionBuild="33"
+  DTS:VersionGUID="{03219A0F-A4B8-40F3-962E-ECB6AA6E24B9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{E2513D4C-820A-4AC4-B630-686849C829DE}"
+      DTS:DTSID="{64D931FC-9AA4-4DD7-9F74-37BA9E622AD9}"
       DTS:ObjectName="Flat File Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -37,34 +37,8 @@
               DTS:ColumnDelimiter="_x002C_"
               DTS:DataType="3"
               DTS:TextQualified="True"
-              DTS:ObjectName="gun_id"
-              DTS:DTSID="{A7C03569-F22A-4F5E-823C-D88FDED697CA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="131"
-              DTS:DataPrecision="18"
-              DTS:DataScale="2"
-              DTS:TextQualified="True"
-              DTS:ObjectName="crime_gravity"
-              DTS:DTSID="{9D3B8DD5-4673-47EF-A679-E9BE2BF4E0B4}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
               DTS:ObjectName="incident_id"
-              DTS:DTSID="{08AE0385-FA26-42FE-8F32-6048E6B1BCB4}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="is_stolen"
-              DTS:DTSID="{C75A630D-FE98-42EA-804D-8E6B2706E61A}"
+              DTS:DTSID="{1762332A-29F1-4903-8884-B1457BA05D36}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -74,7 +48,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="TotalGravity_Stolen"
-              DTS:DTSID="{F3A4E43F-8709-4F4C-B87A-54C1E53E0130}"
+              DTS:DTSID="{97208D61-1B35-421F-88B6-D3A1DAC3B34E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +58,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="TotalGravity_NotStolen"
-              DTS:DTSID="{006B6436-6453-4748-9829-972363D25207}"
+              DTS:DTSID="{17C99A7A-BDF7-4ADC-A2D8-C2A9857749F6}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -93,7 +67,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{129847EA-237B-4CFC-B1CD-6C3DC089F18C}"
+      DTS:DTSID="{1BB536C4-9971-4A46-B430-F4FE8EDF3FE5}"
       DTS:ObjectName="Flat File Connection Manager 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -111,7 +85,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="gun_id"
-              DTS:DTSID="{32781228-3D45-424A-8EA4-E9660BF2C98F}"
+              DTS:DTSID="{2F640DDD-4C9F-497F-8F0E-0C6928CD759E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -121,7 +95,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="crime_gravity"
-              DTS:DTSID="{6DAEAF78-73C5-4596-9611-8DA719AC10EA}"
+              DTS:DTSID="{FFFC7996-F5C7-4A59-BFC9-3F835743FEED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -129,7 +103,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="incident_id"
-              DTS:DTSID="{5CFD8DCE-94E9-4CEE-AB22-F94E45412534}"
+              DTS:DTSID="{95D017F1-ACB0-4D19-9464-8BD786BAC5AE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -137,7 +111,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="is_stolen"
-              DTS:DTSID="{B780F85A-CD44-4260-B30C-EFEBB71E9781}"
+              DTS:DTSID="{7354BFB7-230A-418C-B917-9BE62D5D649F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -147,7 +121,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="TotalGravity_Stolen"
-              DTS:DTSID="{1012EA61-46DB-45FF-B552-01A32765CCCF}"
+              DTS:DTSID="{DB3B96ED-B56F-40F4-BD1B-67D514B47D0E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -157,7 +131,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="TotalGravity_NotStolen"
-              DTS:DTSID="{8E2A965A-6C6C-400C-833C-8F89754B1C79}"
+              DTS:DTSID="{35CF14C3-D494-462A-BFA9-01F6EB3973C3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -167,7 +141,7 @@
               DTS:DataScale="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Ratio"
-              DTS:DTSID="{70DF2BAB-5EA4-4031-8EE0-0AF1DB515ED8}"
+              DTS:DTSID="{DA6A721C-022C-40CC-9FB6-3AD86308F6B4}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -176,7 +150,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{3CA6F352-007C-4B7F-A235-7A94490ED758}"
+      DTS:DTSID="{3761BBCE-6B21-4B6B-8932-F50EA32B0DF6}"
       DTS:ObjectName="Flat File Connection Manager 2">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -194,7 +168,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="gun_id"
-              DTS:DTSID="{D9176FFD-B33A-4F93-B1D8-EAD4E772C61D}"
+              DTS:DTSID="{C589BCA1-C7CF-480F-B6EF-BF88CC34BFAA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -204,7 +178,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="crime_gravity"
-              DTS:DTSID="{38C235D6-7DEA-4718-8CBC-7BA7DEDA0024}"
+              DTS:DTSID="{BD0CB040-008B-4886-B45B-648EE46B6533}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -212,7 +186,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="incident_id"
-              DTS:DTSID="{49239C21-F864-4782-9B42-FD3CBB46F450}"
+              DTS:DTSID="{92AB246D-EF8C-42A0-9E60-960DC81100EA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -220,7 +194,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="is_stolen"
-              DTS:DTSID="{2E41C465-B15B-4239-A115-D45274E82D72}"
+              DTS:DTSID="{9424F45D-726B-44F3-8D61-7FAE5C275455}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -230,7 +204,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="TotalGravity_Stolen"
-              DTS:DTSID="{421F4FE1-3F01-4D08-B38A-C8F18E53E7F4}"
+              DTS:DTSID="{33FA08E2-7BA4-4AC9-A0C0-29429EAE51A6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -240,7 +214,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="TotalGravity_NotStolen"
-              DTS:DTSID="{881E27EA-2722-4658-A5E6-50D3AC9BB410}"
+              DTS:DTSID="{E3E22C66-38E8-4C8F-A970-43BA79DED27E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -250,7 +224,7 @@
               DTS:DataScale="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Ratio"
-              DTS:DTSID="{D254B811-2D93-42FA-8384-5966DA027D4C}"
+              DTS:DTSID="{E29BD54A-3746-4257-838B-76B1CAFBB56B}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -259,7 +233,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 3]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{DB22AC3F-EB59-4A41-A504-392954741BCF}"
+      DTS:DTSID="{A91062FD-A46C-4475-A517-D5007D4C82FC}"
       DTS:ObjectName="Flat File Connection Manager 3">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -277,7 +251,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="incident_id"
-              DTS:DTSID="{F4F5D1A0-1696-45CE-B5C5-75ACFA8E5EC5}"
+              DTS:DTSID="{96AC8FE1-8162-42F9-9FD4-E0273B52C06D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -287,7 +261,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="TotalGravity_Stolen"
-              DTS:DTSID="{BC102CE1-70CF-4451-A74B-94F840BE942D}"
+              DTS:DTSID="{3C8D06DF-8BEB-4333-B372-ED651BAB6410}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -297,7 +271,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="TotalGravity_NotStolen"
-              DTS:DTSID="{8CC59CC2-CC91-4D41-A9FC-5A3841CFAA2C}"
+              DTS:DTSID="{9069A936-9635-4B76-BFC3-B52799661159}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -307,7 +281,109 @@
               DTS:DataScale="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Ratio"
-              DTS:DTSID="{4423DBC3-E60E-43C5-9D2A-934967C5585F}"
+              DTS:DTSID="{61B973BE-43B0-4AE7-8299-89F5E005C2F2}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 4]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E797597E-E22E-4C7C-9542-21EDAD92DF5F}"
+      DTS:ObjectName="Flat File Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1040"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\franc\Desktop\incident_prova.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="incident_id"
+              DTS:DTSID="{B6EE41A9-EFBD-4D18-9229-91E8EBC2DAA7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalGravity_Stolen"
+              DTS:DTSID="{3C8A1081-4A7F-417C-AA6C-9CF564E71E39}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="incident_id (1)"
+              DTS:DTSID="{294FE814-52FE-4932-85BE-D321F2BB6677}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalGravity_NotStolen"
+              DTS:DTSID="{637F7973-E265-4D79-9719-FC37C5B9F439}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 5]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{16BE5617-F45B-42D8-BF62-30AFBA029258}"
+      DTS:ObjectName="Flat File Connection Manager 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1040"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\franc\Desktop\incident_prova.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="incident_id"
+              DTS:DTSID="{696DCBA9-BD40-4796-8883-771270C7AB58}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalGravity_Stolen"
+              DTS:DTSID="{DC6F09B2-1B0F-4CE9-A1FD-6C8E0C4C9C09}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalGravity_NotStolen"
+              DTS:DTSID="{74C468EB-8756-4FCA-B357-B6FAA864C517}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -316,17 +392,17 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[lds.di.unipi.it.GROUP_ID_183.GROUP_ID_183 1]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{FFFFC7CC-3572-4730-8095-888BBA5A1EA3}"
+      DTS:DTSID="{BEFA9FBD-0297-49B5-9A4A-5161ED94E70A}"
       DTS:ObjectName="lds.di.unipi.it.GROUP_ID_183.GROUP_ID_183 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=lds.di.unipi.it;User ID=GROUP_ID_183;Initial Catalog=GROUP_ID_183_DB;Provider=MSOLEDBSQL.1;Auto Translate=False;Application Name=SSIS-Package2-{FFFFC7CC-3572-4730-8095-888BBA5A1EA3}lds.di.unipi.it.GROUP_ID_183.GROUP_ID_183 1;">
+          DTS:ConnectionString="Data Source=lds.di.unipi.it;User ID=GROUP_ID_183;Initial Catalog=GROUP_ID_183_DB;Provider=MSOLEDBSQL.1;Auto Translate=False;Application Name=SSIS-Package2-{BEFA9FBD-0297-49B5-9A4A-5161ED94E70A}lds.di.unipi.it.GROUP_ID_183.GROUP_ID_183 1;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO9pJqhLFP0Kb1exFA4w6cgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB9IQ7jOLuHHL/5ZvkVpEi4x2suuedvn1syuIul3EiBGgAAAAAOgAAAAAIAACAAAABjnJOUFQSYIgyVk3e0Jd+RjVEBO2fkj5NCSgptSjTsayAAAACrNj0wP1R4ZpcXvmWdFBDw1MrGWRX+9/KJ1mxG+os0jUAAAACI1Hyw7OHdA9RFOwVqMI6EPKnL0oC5KvhvKxmuPimasZdALWuPeQqxQR6xffcXjFE+gai3Yl0QB1Zkm8yEx3D1</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO9pJqhLFP0Kb1exFA4w6cgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAIR0zcceTxBhumtm2AlaZBltmC0usHYDjKMWuczr37xAAAAAAOgAAAAAIAACAAAADnSAR4Ob8yWUZ+xfUnnyuyKGBNK8Bh6b+36u/sAWRA3iAAAADIwOmkh1aZJn3wIJ89q01RI+K6ZTCDFO2dnKuzkip6DUAAAACD6nXbKAV5DlerKMxfYZGVkf0ac/p4Kx0XurrnPn/gdP5n2vQqbi4bWFYhhHxNUI/S4q0uYsFrqQq2E4+XWpMK</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -337,7 +413,7 @@
       DTS:refId="Package\Attività Flusso di dati"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Attività Flusso di dati"
-      DTS:DTSID="{11DE306B-2964-4036-8D3C-16ED4C7892B5}"
+      DTS:DTSID="{CEB0C330-5984-47C2-A130-D5C69E4AFABA}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Attività Flusso di dati"
@@ -384,17 +460,17 @@
                   name="Input aggregazione 1">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Attività Flusso di dati\Aggregazione.Inputs[Input aggregazione 1].Columns[incident_id]"
-                      cachedDataType="i4"
-                      cachedName="incident_id"
-                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[incident_id]" />
-                    <inputColumn
                       refId="Package\Attività Flusso di dati\Aggregazione.Inputs[Input aggregazione 1].Columns[TotalGravity_Stolen]"
                       cachedDataType="numeric"
                       cachedName="TotalGravity_Stolen"
                       cachedPrecision="18"
                       cachedScale="2"
                       lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[TotalGravity_Stolen]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Aggregazione.Inputs[Input aggregazione 1].Columns[incident_id]"
+                      cachedDataType="i4"
+                      cachedName="incident_id"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[incident_id]" />
                     <inputColumn
                       refId="Package\Attività Flusso di dati\Aggregazione.Inputs[Input aggregazione 1].Columns[TotalGravity_NotStolen]"
                       cachedDataType="numeric"
@@ -422,32 +498,6 @@
                       name="Keys" />
                   </properties>
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[incident_id]"
-                      dataType="i4"
-                      lineageId="Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[incident_id]"
-                      name="incident_id">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifica l'ID della colonna di input utilizzata nell'aggregazione."
-                          name="AggregationColumnId">#{Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[incident_id]}</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifica il tipo di aggregazione."
-                          name="AggregationType"
-                          typeConverter="AggregationType">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Indica se la colonna richieste interventi di gestione speciali perché contiene dati di dimensioni eccessive o richiede una precisione maggiore rispetto al tipo di dati float."
-                          name="IsBig">1</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifica le opzioni per il confronto di stringhe."
-                          name="AggregationComparisonFlags">0</property>
-                      </properties>
-                    </outputColumn>
                     <outputColumn
                       refId="Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[TotalGravity_Stolen]"
                       dataType="numeric"
@@ -477,6 +527,32 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
+                      refId="Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[incident_id]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[incident_id]"
+                      name="incident_id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'ID della colonna di input utilizzata nell'aggregazione."
+                          name="AggregationColumnId">#{Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[incident_id]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di aggregazione."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indica se la colonna richieste interventi di gestione speciali perché contiene dati di dimensioni eccessive o richiede una precisione maggiore rispetto al tipo di dati float."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni per il confronto di stringhe."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
                       refId="Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[TotalGravity_NotStolen]"
                       dataType="numeric"
                       lineageId="Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[TotalGravity_NotStolen]"
@@ -489,6 +565,168 @@
                           dataType="System.Int32"
                           description="Specifica l'ID della colonna di input utilizzata nell'aggregazione."
                           name="AggregationColumnId">#{Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[TotalGravity_NotStolen]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di aggregazione."
+                          name="AggregationType"
+                          typeConverter="AggregationType">4</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indica se la colonna richieste interventi di gestione speciali perché contiene dati di dimensioni eccessive o richiede una precisione maggiore rispetto al tipo di dati float."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni per il confronto di stringhe."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Attività Flusso di dati\Aggregazione 1"
+              componentClassID="Microsoft.Aggregate"
+              contactInfo="Aggregazione;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;3"
+              description="Aggrega i dati con funzioni quali Media, Somma, Conta numeri, Max e Min. Ad esempio, raggruppare i dati per calcolare la somma delle vendite per prodotto o la media giornaliera delle visite."
+              name="Aggregazione 1"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica il numero approssimativo di chiavi Group By generate dall'aggregazione. Basso indica 500.000 valori di chiave, Medio indica 5 milioni di valori di chiave e Alto indica più di 25 milioni di valori di chiave. Non specificato indica che non viene utilizzato alcun valore KeyScale."
+                  name="KeyScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifica il numero esatto di chiavi Group By generate dall'aggregazione. Se si specifica un valore KeyScale, il valore di Keys ha la precedenza."
+                  name="Keys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifica il numero approssimativo di valori Distinct in una colonna a cui viene applicata la funzione di aggregazione Count Distinct. Basso indica 500.000 valori di chiave, Medio indica 5 milioni di valori di chiave e Alto indica 25 milioni di valori di chiave. Non specificato indica che non viene utilizzato alcun valore CountDistinctScale."
+                  name="CountDistinctScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifica il numero approssimativo di valori Distinct in una colonna a cui viene applicata la funzione di aggregazione Count Distinct. Se si specifica un valore CountDistinctScale, il valore in CountDistinctKeys ha la precedenza."
+                  name="CountDistinctKeys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifica la percentuale di estensione della memoria consentita durante l'aggregazione. I valori validi sono compresi tra 1 e 100."
+                  name="AutoExtendFactor">25</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Attività Flusso di dati\Aggregazione 1.Inputs[Input aggregazione 1]"
+                  name="Input aggregazione 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Aggregazione 1.Inputs[Input aggregazione 1].Columns[incident_id]"
+                      cachedDataType="i4"
+                      cachedName="incident_id"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[incident_id]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Aggregazione 1.Inputs[Input aggregazione 1].Columns[TotalGravity_NotStolen]"
+                      cachedDataType="numeric"
+                      cachedName="TotalGravity_NotStolen"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[TotalGravity_NotStolen]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Aggregazione 1.Inputs[Input aggregazione 1].Columns[TotalGravity_Stolen]"
+                      cachedDataType="numeric"
+                      cachedName="TotalGravity_Stolen"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[TotalGravity_Stolen]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Attività Flusso di dati\Aggregazione 1.Outputs[Output aggregazione 1]"
+                  name="Output aggregazione 1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifica il numero approssimativo di chiavi Group By generate dall'aggregazione. Basso indica 500.000 valori di chiave, Medio indica 5 milioni di valori di chiave e Alto indica più di 25 milioni di valori di chiave. Non specificato indica che non viene utilizzato alcun valore KeyScale."
+                      name="KeyScale"
+                      typeConverter="KeyScaleType">0</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifica il numero esatto di chiavi Group By generate dall'aggregazione. Se si specifica un valore KeyScale, il valore di Keys ha la precedenza."
+                      name="Keys" />
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Aggregazione 1.Outputs[Output aggregazione 1].Columns[incident_id]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Aggregazione 1.Outputs[Output aggregazione 1].Columns[incident_id]"
+                      name="incident_id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'ID della colonna di input utilizzata nell'aggregazione."
+                          name="AggregationColumnId">#{Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[incident_id]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di aggregazione."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indica se la colonna richieste interventi di gestione speciali perché contiene dati di dimensioni eccessive o richiede una precisione maggiore rispetto al tipo di dati float."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni per il confronto di stringhe."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Aggregazione 1.Outputs[Output aggregazione 1].Columns[TotalGravity_NotStolen]"
+                      dataType="numeric"
+                      lineageId="Package\Attività Flusso di dati\Aggregazione 1.Outputs[Output aggregazione 1].Columns[TotalGravity_NotStolen]"
+                      name="TotalGravity_NotStolen"
+                      precision="18"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'ID della colonna di input utilizzata nell'aggregazione."
+                          name="AggregationColumnId">#{Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[TotalGravity_NotStolen]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di aggregazione."
+                          name="AggregationType"
+                          typeConverter="AggregationType">4</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indica se la colonna richieste interventi di gestione speciali perché contiene dati di dimensioni eccessive o richiede una precisione maggiore rispetto al tipo di dati float."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni per il confronto di stringhe."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Aggregazione 1.Outputs[Output aggregazione 1].Columns[TotalGravity_Stolen]"
+                      dataType="numeric"
+                      lineageId="Package\Attività Flusso di dati\Aggregazione 1.Outputs[Output aggregazione 1].Columns[TotalGravity_Stolen]"
+                      name="TotalGravity_Stolen"
+                      precision="18"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'ID della colonna di input utilizzata nell'aggregazione."
+                          name="AggregationColumnId">#{Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[TotalGravity_Stolen]}</property>
                         <property
                           dataType="System.Int32"
                           description="Specifica il tipo di aggregazione."
@@ -615,97 +853,6 @@
                       refId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output errori colonna derivata].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output errori colonna derivata].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Attività Flusso di dati\Colonna derivata 1"
-              componentClassID="Microsoft.DerivedColumn"
-              contactInfo="Colonna derivata;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;0"
-              description="Crea nuovi valori di colonna applicando espressioni alle colonne di input della trasformazione. Creare nuove colonne oppure sovrascrivere quelle esistenti. Ad esempio, concatenare i valori delle colonne 'first name' e 'last name' per creare una colonna 'full name'."
-              name="Colonna derivata 1"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\Attività Flusso di dati\Colonna derivata 1.Inputs[Input colonna derivata]"
-                  description="Input della trasformazione Colonna derivata"
-                  name="Input colonna derivata">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Attività Flusso di dati\Colonna derivata 1.Inputs[Input colonna derivata].Columns[TotalGravity_Stolen]"
-                      cachedDataType="numeric"
-                      cachedName="TotalGravity_Stolen"
-                      cachedPrecision="18"
-                      cachedScale="2"
-                      lineageId="Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[TotalGravity_Stolen]" />
-                    <inputColumn
-                      refId="Package\Attività Flusso di dati\Colonna derivata 1.Inputs[Input colonna derivata].Columns[TotalGravity_NotStolen]"
-                      cachedDataType="numeric"
-                      cachedName="TotalGravity_NotStolen"
-                      cachedPrecision="18"
-                      cachedScale="2"
-                      lineageId="Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[TotalGravity_NotStolen]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Attività Flusso di dati\Colonna derivata 1.Outputs[Output colonna derivata]"
-                  description="Output predefinito della trasformazione Colonna derivata"
-                  exclusionGroup="1"
-                  name="Output colonna derivata"
-                  synchronousInputId="Package\Attività Flusso di dati\Colonna derivata 1.Inputs[Input colonna derivata]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Attività Flusso di dati\Colonna derivata 1.Outputs[Output colonna derivata].Columns[Ratio]"
-                      dataType="numeric"
-                      errorOrTruncationOperation="Calcolo"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Attività Flusso di dati\Colonna derivata 1.Outputs[Output colonna derivata].Columns[Ratio]"
-                      name="Ratio"
-                      precision="38"
-                      scale="20"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Espressione colonna derivata"
-                          name="Expression">(#{Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[TotalGravity_NotStolen]} == 0) ? 0 : (#{Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[TotalGravity_Stolen]} / #{Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[TotalGravity_NotStolen]})</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Espressione descrittiva colonna derivata"
-                          expressionType="Notify"
-                          name="FriendlyExpression">(TotalGravity_NotStolen == 0) ? 0 : (TotalGravity_Stolen / TotalGravity_NotStolen)</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Attività Flusso di dati\Colonna derivata 1.Outputs[Output errori colonna derivata]"
-                  description="Output degli errori della trasformazione Colonna derivata"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Output errori colonna derivata"
-                  synchronousInputId="Package\Attività Flusso di dati\Colonna derivata 1.Inputs[Input colonna derivata]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Attività Flusso di dati\Colonna derivata 1.Outputs[Output errori colonna derivata].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Attività Flusso di dati\Colonna derivata 1.Outputs[Output errori colonna derivata].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Attività Flusso di dati\Colonna derivata 1.Outputs[Output errori colonna derivata].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Attività Flusso di dati\Colonna derivata 1.Outputs[Output errori colonna derivata].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -969,12 +1116,12 @@
               </outputs>
             </component>
             <component
-              refId="Package\Attività Flusso di dati\Destinazione file flat"
+              refId="Package\Attività Flusso di dati\Destinazione file flat 1"
               componentClassID="Microsoft.FlatFileDestination"
               contactInfo="Destinazione file flat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;1"
               description="Destinazione file flat"
               localeId="1040"
-              name="Destinazione file flat"
+              name="Destinazione file flat 1"
               version="1">
               <properties>
                 <property
@@ -993,72 +1140,59 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Attività Flusso di dati\Destinazione file flat.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 3]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 3]"
+                  refId="Package\Attività Flusso di dati\Destinazione file flat 1.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 5]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 5]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\Attività Flusso di dati\Destinazione file flat.Inputs[Input destinazione file flat]"
+                  refId="Package\Attività Flusso di dati\Destinazione file flat 1.Inputs[Input destinazione file flat]"
                   hasSideEffects="true"
                   name="Input destinazione file flat">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Attività Flusso di dati\Destinazione file flat.Inputs[Input destinazione file flat].Columns[incident_id]"
+                      refId="Package\Attività Flusso di dati\Destinazione file flat 1.Inputs[Input destinazione file flat].Columns[incident_id]"
                       cachedDataType="i4"
                       cachedName="incident_id"
-                      externalMetadataColumnId="Package\Attività Flusso di dati\Destinazione file flat.Inputs[Input destinazione file flat].ExternalColumns[incident_id]"
-                      lineageId="Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[incident_id]" />
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Destinazione file flat 1.Inputs[Input destinazione file flat].ExternalColumns[incident_id]"
+                      lineageId="Package\Attività Flusso di dati\Merge join 1.Outputs[Output merge join].Columns[incident_id]" />
                     <inputColumn
-                      refId="Package\Attività Flusso di dati\Destinazione file flat.Inputs[Input destinazione file flat].Columns[TotalGravity_Stolen]"
+                      refId="Package\Attività Flusso di dati\Destinazione file flat 1.Inputs[Input destinazione file flat].Columns[TotalGravity_Stolen]"
                       cachedDataType="numeric"
                       cachedName="TotalGravity_Stolen"
                       cachedPrecision="18"
                       cachedScale="2"
-                      externalMetadataColumnId="Package\Attività Flusso di dati\Destinazione file flat.Inputs[Input destinazione file flat].ExternalColumns[TotalGravity_Stolen]"
-                      lineageId="Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[TotalGravity_Stolen]" />
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Destinazione file flat 1.Inputs[Input destinazione file flat].ExternalColumns[TotalGravity_Stolen]"
+                      lineageId="Package\Attività Flusso di dati\Merge join 1.Outputs[Output merge join].Columns[TotalGravity_Stolen]" />
                     <inputColumn
-                      refId="Package\Attività Flusso di dati\Destinazione file flat.Inputs[Input destinazione file flat].Columns[TotalGravity_NotStolen]"
+                      refId="Package\Attività Flusso di dati\Destinazione file flat 1.Inputs[Input destinazione file flat].Columns[TotalGravity_NotStolen]"
                       cachedDataType="numeric"
                       cachedName="TotalGravity_NotStolen"
                       cachedPrecision="18"
                       cachedScale="2"
-                      externalMetadataColumnId="Package\Attività Flusso di dati\Destinazione file flat.Inputs[Input destinazione file flat].ExternalColumns[TotalGravity_NotStolen]"
-                      lineageId="Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[TotalGravity_NotStolen]" />
-                    <inputColumn
-                      refId="Package\Attività Flusso di dati\Destinazione file flat.Inputs[Input destinazione file flat].Columns[Ratio]"
-                      cachedDataType="numeric"
-                      cachedName="Ratio"
-                      cachedPrecision="38"
-                      cachedScale="20"
-                      externalMetadataColumnId="Package\Attività Flusso di dati\Destinazione file flat.Inputs[Input destinazione file flat].ExternalColumns[Ratio]"
-                      lineageId="Package\Attività Flusso di dati\Colonna derivata 1.Outputs[Output colonna derivata].Columns[Ratio]" />
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Destinazione file flat 1.Inputs[Input destinazione file flat].ExternalColumns[TotalGravity_NotStolen]"
+                      lineageId="Package\Attività Flusso di dati\Merge join 1.Outputs[Output merge join].Columns[TotalGravity_NotStolen]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Attività Flusso di dati\Destinazione file flat.Inputs[Input destinazione file flat].ExternalColumns[incident_id]"
+                      refId="Package\Attività Flusso di dati\Destinazione file flat 1.Inputs[Input destinazione file flat].ExternalColumns[incident_id]"
                       dataType="i4"
                       name="incident_id" />
                     <externalMetadataColumn
-                      refId="Package\Attività Flusso di dati\Destinazione file flat.Inputs[Input destinazione file flat].ExternalColumns[TotalGravity_Stolen]"
+                      refId="Package\Attività Flusso di dati\Destinazione file flat 1.Inputs[Input destinazione file flat].ExternalColumns[TotalGravity_Stolen]"
                       dataType="numeric"
                       name="TotalGravity_Stolen"
                       precision="18"
                       scale="2" />
                     <externalMetadataColumn
-                      refId="Package\Attività Flusso di dati\Destinazione file flat.Inputs[Input destinazione file flat].ExternalColumns[TotalGravity_NotStolen]"
+                      refId="Package\Attività Flusso di dati\Destinazione file flat 1.Inputs[Input destinazione file flat].ExternalColumns[TotalGravity_NotStolen]"
                       dataType="numeric"
                       name="TotalGravity_NotStolen"
                       precision="18"
                       scale="2" />
-                    <externalMetadataColumn
-                      refId="Package\Attività Flusso di dati\Destinazione file flat.Inputs[Input destinazione file flat].ExternalColumns[Ratio]"
-                      dataType="numeric"
-                      name="Ratio"
-                      precision="38"
-                      scale="20" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1332,6 +1466,131 @@
               </outputs>
             </component>
             <component
+              refId="Package\Attività Flusso di dati\Merge join 1"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;1"
+              description="Combina due flussi di dati ordinati in uno solo tramite join di tipo FULL, LEFT o INNER. Questa trasformazione è consigliata quando i flussi di dati possono essere ordinati alle relative origini."
+              name="Merge join 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica il tipo di join da eseguire."
+                  name="JoinType"
+                  typeConverter="JoinType">2</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica il numero di colonne nella chiave di ordinamento."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se i valori Null vengono considerati come valori uguali."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indica il numero massimo di buffer richiesti per input prima dell'attivazione del blocco."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Attività Flusso di dati\Merge join 1.Inputs[Input merge join sinistro]"
+                  hasSideEffects="true"
+                  name="Input merge join sinistro">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join 1.Inputs[Input merge join sinistro].Columns[incident_id]"
+                      cachedDataType="i4"
+                      cachedName="incident_id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 2.Outputs[Output ordinamento].Columns[incident_id]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join 1.Inputs[Input merge join sinistro].Columns[TotalGravity_Stolen]"
+                      cachedDataType="numeric"
+                      cachedName="TotalGravity_Stolen"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 2.Outputs[Output ordinamento].Columns[TotalGravity_Stolen]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Attività Flusso di dati\Merge join 1.Inputs[Input merge join destro]"
+                  hasSideEffects="true"
+                  name="Input merge join destro">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join 1.Inputs[Input merge join destro].Columns[incident_id]"
+                      cachedDataType="i4"
+                      cachedName="incident_id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 3.Outputs[Output ordinamento].Columns[incident_id]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join 1.Inputs[Input merge join destro].Columns[TotalGravity_NotStolen]"
+                      cachedDataType="numeric"
+                      cachedName="TotalGravity_NotStolen"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 3.Outputs[Output ordinamento].Columns[TotalGravity_NotStolen]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Attività Flusso di dati\Merge join 1.Outputs[Output merge join]"
+                  isSorted="true"
+                  name="Output merge join">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join 1.Outputs[Output merge join].Columns[incident_id]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Merge join 1.Outputs[Output merge join].Columns[incident_id]"
+                      name="incident_id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join 1.Inputs[Input merge join sinistro].Columns[incident_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join 1.Outputs[Output merge join].Columns[TotalGravity_Stolen]"
+                      dataType="numeric"
+                      lineageId="Package\Attività Flusso di dati\Merge join 1.Outputs[Output merge join].Columns[TotalGravity_Stolen]"
+                      name="TotalGravity_Stolen"
+                      precision="18"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join 1.Inputs[Input merge join sinistro].Columns[TotalGravity_Stolen]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join 1.Outputs[Output merge join].Columns[TotalGravity_NotStolen]"
+                      dataType="numeric"
+                      lineageId="Package\Attività Flusso di dati\Merge join 1.Outputs[Output merge join].Columns[TotalGravity_NotStolen]"
+                      name="TotalGravity_NotStolen"
+                      precision="18"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join 1.Inputs[Input merge join destro].Columns[TotalGravity_NotStolen]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Attività Flusso di dati\Ordinamento"
               componentClassID="Microsoft.Sort"
               contactInfo="Ordinamento;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;1"
@@ -1558,6 +1817,391 @@
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\Attività Flusso di dati\Ordinamento 2"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Ordinamento;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;1"
+              description="Ordina i dati di input in ordine crescente o decrescente quando non possono essere ordinati come la relativa origine. Ad esempio, ordinare i dati delle vendite per 'customer id' prima che vengano scritti in un file flat e recapitati a un altro reparto. Nota: questa trasformazione non è consigliata per i flussi di dati di grandi dimensioni."
+              name="Ordinamento 2"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se la trasformazione Ordinamento rimuove le righe con valori di ordinamento duplicati."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica il numero massimo di thread da utilizzare per l'ordinamento."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Attività Flusso di dati\Ordinamento 2.Inputs[Input ordinamento]"
+                  name="Input ordinamento">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 2.Inputs[Input ordinamento].Columns[TotalGravity_Stolen]"
+                      cachedDataType="numeric"
+                      cachedName="TotalGravity_Stolen"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      lineageId="Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[TotalGravity_Stolen]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 2.Inputs[Input ordinamento].Columns[incident_id]"
+                      cachedDataType="i4"
+                      cachedName="incident_id"
+                      lineageId="Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[incident_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 2.Inputs[Input ordinamento].Columns[TotalGravity_NotStolen]"
+                      cachedDataType="numeric"
+                      cachedName="TotalGravity_NotStolen"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      lineageId="Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[TotalGravity_NotStolen]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Attività Flusso di dati\Ordinamento 2.Outputs[Output ordinamento]"
+                  isSorted="true"
+                  name="Output ordinamento">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 2.Outputs[Output ordinamento].Columns[TotalGravity_Stolen]"
+                      dataType="numeric"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 2.Outputs[Output ordinamento].Columns[TotalGravity_Stolen]"
+                      name="TotalGravity_Stolen"
+                      precision="18"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[TotalGravity_Stolen]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 2.Outputs[Output ordinamento].Columns[incident_id]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 2.Outputs[Output ordinamento].Columns[incident_id]"
+                      name="incident_id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[incident_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 2.Outputs[Output ordinamento].Columns[TotalGravity_NotStolen]"
+                      dataType="numeric"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 2.Outputs[Output ordinamento].Columns[TotalGravity_NotStolen]"
+                      name="TotalGravity_NotStolen"
+                      precision="18"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1].Columns[TotalGravity_NotStolen]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Attività Flusso di dati\Ordinamento 3"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Ordinamento;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;1"
+              description="Ordina i dati di input in ordine crescente o decrescente quando non possono essere ordinati come la relativa origine. Ad esempio, ordinare i dati delle vendite per 'customer id' prima che vengano scritti in un file flat e recapitati a un altro reparto. Nota: questa trasformazione non è consigliata per i flussi di dati di grandi dimensioni."
+              name="Ordinamento 3"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se la trasformazione Ordinamento rimuove le righe con valori di ordinamento duplicati."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica il numero massimo di thread da utilizzare per l'ordinamento."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Attività Flusso di dati\Ordinamento 3.Inputs[Input ordinamento]"
+                  name="Input ordinamento">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 3.Inputs[Input ordinamento].Columns[incident_id]"
+                      cachedDataType="i4"
+                      cachedName="incident_id"
+                      lineageId="Package\Attività Flusso di dati\Aggregazione 1.Outputs[Output aggregazione 1].Columns[incident_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 3.Inputs[Input ordinamento].Columns[TotalGravity_NotStolen]"
+                      cachedDataType="numeric"
+                      cachedName="TotalGravity_NotStolen"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      lineageId="Package\Attività Flusso di dati\Aggregazione 1.Outputs[Output aggregazione 1].Columns[TotalGravity_NotStolen]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 3.Inputs[Input ordinamento].Columns[TotalGravity_Stolen]"
+                      cachedDataType="numeric"
+                      cachedName="TotalGravity_Stolen"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      lineageId="Package\Attività Flusso di dati\Aggregazione 1.Outputs[Output aggregazione 1].Columns[TotalGravity_Stolen]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Attività Flusso di dati\Ordinamento 3.Outputs[Output ordinamento]"
+                  isSorted="true"
+                  name="Output ordinamento">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 3.Outputs[Output ordinamento].Columns[incident_id]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 3.Outputs[Output ordinamento].Columns[incident_id]"
+                      name="incident_id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Aggregazione 1.Outputs[Output aggregazione 1].Columns[incident_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 3.Outputs[Output ordinamento].Columns[TotalGravity_NotStolen]"
+                      dataType="numeric"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 3.Outputs[Output ordinamento].Columns[TotalGravity_NotStolen]"
+                      name="TotalGravity_NotStolen"
+                      precision="18"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Aggregazione 1.Outputs[Output aggregazione 1].Columns[TotalGravity_NotStolen]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 3.Outputs[Output ordinamento].Columns[TotalGravity_Stolen]"
+                      dataType="numeric"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 3.Outputs[Output ordinamento].Columns[TotalGravity_Stolen]"
+                      name="TotalGravity_Stolen"
+                      precision="18"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Aggregazione 1.Outputs[Output aggregazione 1].Columns[TotalGravity_Stolen]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Attività Flusso di dati\Suddivisione condizionale 1"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Suddivisione condizionale;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;0"
+              description="Indirizza righe di dati a output diversi a seconda del contenuto dei dati. Usare le condizioni (espressioni SSIS) per specificare le righe da indirizzare. Ad esempio, separare i record da eliminare da quelli pronti per essere caricati oppure indirizzare unicamente un subset di record."
+              name="Suddivisione condizionale 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Inputs[Input suddivisione condizionale]"
+                  description="Input della trasformazione Suddivisione condizionale"
+                  name="Input suddivisione condizionale">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Inputs[Input suddivisione condizionale].Columns[is_stolen]"
+                      cachedDataType="bool"
+                      cachedName="is_stolen"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[is_stolen]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Outputs[stolen]"
+                  description="Output 1 della trasformazione Suddivisione condizionale"
+                  errorOrTruncationOperation="Calcolo"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="stolen"
+                  synchronousInputId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Inputs[Input suddivisione condizionale]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifica l'espressione. Questa versione dell'espressione utilizza gli identificatori di derivazione anziché i nomi di colonna."
+                      name="Expression">#{Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[is_stolen]} ==  TRUE </property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifica la versione descrittiva dell'espressione. Questa versione dell'espressione utilizza i nomi di colonna."
+                      expressionType="Notify"
+                      name="FriendlyExpression">is_stolen ==  TRUE </property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifica la posizione della condizione nell'elenco delle condizioni valutate dalla trasformazione. L'ordine di valutazione è crescente, dal valore più basso al più alto."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Outputs[not stolen]"
+                  description="Output 2 della trasformazione Suddivisione condizionale"
+                  errorOrTruncationOperation="Calcolo"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="not stolen"
+                  synchronousInputId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Inputs[Input suddivisione condizionale]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifica l'espressione. Questa versione dell'espressione utilizza gli identificatori di derivazione anziché i nomi di colonna."
+                      name="Expression">#{Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[is_stolen]} ==  FALSE </property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifica la versione descrittiva dell'espressione. Questa versione dell'espressione utilizza i nomi di colonna."
+                      expressionType="Notify"
+                      name="FriendlyExpression">is_stolen ==  FALSE </property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifica la posizione della condizione nell'elenco delle condizioni valutate dalla trasformazione. L'ordine di valutazione è crescente, dal valore più basso al più alto."
+                      name="EvaluationOrder">1</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Outputs[Output predefinito suddivisione condizionale]"
+                  description="Output predefinito per la trasformazione Suddivisione condizionale"
+                  exclusionGroup="1"
+                  name="Output predefinito suddivisione condizionale"
+                  synchronousInputId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Inputs[Input suddivisione condizionale]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Outputs[Output errori suddivisione condizionale]"
+                  description="Output degli errori per la trasformazione Suddivisione condizionale"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Output errori suddivisione condizionale"
+                  synchronousInputId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Inputs[Input suddivisione condizionale]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Outputs[Output errori suddivisione condizionale].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Outputs[Output errori suddivisione condizionale].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Outputs[Output errori suddivisione condizionale].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Outputs[Output errori suddivisione condizionale].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
             <path
@@ -1566,25 +2210,35 @@
               name="crime gravity"
               startId="Package\Attività Flusso di dati\crime gravity &gt; 1.Outputs[crime gravity]" />
             <path
+              refId="Package\Attività Flusso di dati.Paths[not stolen]"
+              endId="Package\Attività Flusso di dati\Aggregazione 1.Inputs[Input aggregazione 1]"
+              name="not stolen"
+              startId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Outputs[not stolen]" />
+            <path
               refId="Package\Attività Flusso di dati.Paths[Output aggregazione 1]"
-              endId="Package\Attività Flusso di dati\Colonna derivata 1.Inputs[Input colonna derivata]"
+              endId="Package\Attività Flusso di dati\Ordinamento 2.Inputs[Input ordinamento]"
               name="Output aggregazione 1"
               startId="Package\Attività Flusso di dati\Aggregazione.Outputs[Output aggregazione 1]" />
             <path
+              refId="Package\Attività Flusso di dati.Paths[Output aggregazione 11]"
+              endId="Package\Attività Flusso di dati\Ordinamento 3.Inputs[Input ordinamento]"
+              name="Output aggregazione 1"
+              startId="Package\Attività Flusso di dati\Aggregazione 1.Outputs[Output aggregazione 1]" />
+            <path
               refId="Package\Attività Flusso di dati.Paths[Output colonna derivata]"
-              endId="Package\Attività Flusso di dati\Aggregazione.Inputs[Input aggregazione 1]"
+              endId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Inputs[Input suddivisione condizionale]"
               name="Output colonna derivata"
               startId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata]" />
-            <path
-              refId="Package\Attività Flusso di dati.Paths[Output colonna derivata1]"
-              endId="Package\Attività Flusso di dati\Destinazione file flat.Inputs[Input destinazione file flat]"
-              name="Output colonna derivata"
-              startId="Package\Attività Flusso di dati\Colonna derivata 1.Outputs[Output colonna derivata]" />
             <path
               refId="Package\Attività Flusso di dati.Paths[Output merge join]"
               endId="Package\Attività Flusso di dati\Colonna derivata.Inputs[Input colonna derivata]"
               name="Output merge join"
               startId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join]" />
+            <path
+              refId="Package\Attività Flusso di dati.Paths[Output merge join1]"
+              endId="Package\Attività Flusso di dati\Destinazione file flat 1.Inputs[Input destinazione file flat]"
+              name="Output merge join"
+              startId="Package\Attività Flusso di dati\Merge join 1.Outputs[Output merge join]" />
             <path
               refId="Package\Attività Flusso di dati.Paths[Output ordinamento]"
               endId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro]"
@@ -1596,6 +2250,16 @@
               name="Output ordinamento"
               startId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento]" />
             <path
+              refId="Package\Attività Flusso di dati.Paths[Output ordinamento2]"
+              endId="Package\Attività Flusso di dati\Merge join 1.Inputs[Input merge join sinistro]"
+              name="Output ordinamento"
+              startId="Package\Attività Flusso di dati\Ordinamento 2.Outputs[Output ordinamento]" />
+            <path
+              refId="Package\Attività Flusso di dati.Paths[Output ordinamento3]"
+              endId="Package\Attività Flusso di dati\Merge join 1.Inputs[Input merge join destro]"
+              name="Output ordinamento"
+              startId="Package\Attività Flusso di dati\Ordinamento 3.Outputs[Output ordinamento]" />
+            <path
               refId="Package\Attività Flusso di dati.Paths[Output origine OLE DB]"
               endId="Package\Attività Flusso di dati\Ordinamento 1.Inputs[Input ordinamento]"
               name="Output origine OLE DB"
@@ -1605,6 +2269,11 @@
               endId="Package\Attività Flusso di dati\crime gravity &gt; 1.Inputs[Input suddivisione condizionale]"
               name="Output origine OLE DB"
               startId="Package\Attività Flusso di dati\Custody_incident.Outputs[Output origine OLE DB]" />
+            <path
+              refId="Package\Attività Flusso di dati.Paths[stolen]"
+              endId="Package\Attività Flusso di dati\Aggregazione.Inputs[Input aggregazione 1]"
+              name="stolen"
+              startId="Package\Attività Flusso di dati\Suddivisione condizionale 1.Outputs[stolen]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1651,10 +2320,6 @@
           Id="Package\Attività Flusso di dati\Merge join"
           TopLeft="211.87499052845,203.449990298748" />
         <NodeLayout
-          Size="168,42.6666666666667"
-          Id="Package\Attività Flusso di dati\Colonna derivata 1"
-          TopLeft="204.374990863726,437.233315790495" />
-        <NodeLayout
           Size="141.333333333334,42.6666666666667"
           Id="Package\Attività Flusso di dati\Ordinamento"
           TopLeft="71.2499968148769,170.299991879464" />
@@ -1663,17 +2328,9 @@
           Id="Package\Attività Flusso di dati\gun"
           TopLeft="347.49998446554,66.2999968385698" />
         <NodeLayout
-          Size="174.666666666667,42.6666666666667"
-          Id="Package\Attività Flusso di dati\Destinazione file flat"
-          TopLeft="195.624991254881,533.433314922651" />
-        <NodeLayout
           Size="161.333333333334,42.6666666666667"
           Id="Package\Attività Flusso di dati\crime gravity &gt; 1"
           TopLeft="73.7499967031182,85.3499950718882" />
-        <NodeLayout
-          Size="144,42.6666666666667"
-          Id="Package\Attività Flusso di dati\Aggregazione"
-          TopLeft="213.749990444631,358.799982891083" />
         <EdgeLayout
           Id="Package\Attività Flusso di dati.Paths[Output origine OLE DB1]"
           TopLeft="184.999995306134,62.1666657368342">
@@ -1827,84 +2484,6 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Attività Flusso di dati.Paths[Output colonna derivata1]"
-          TopLeft="285.66665772597,479.899982457162">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,53.5333324654898"
-              Start="0,0"
-              End="0,46.0333324654898">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.0333324654898" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Attività Flusso di dati.Paths[Output colonna derivata]"
-          TopLeft="276.833324504396,320.866653401057">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="8.91666594023513,37.933329490026"
-              Start="0,0"
-              End="8.91666594023513,30.433329490026">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,14.966664745013" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.966664745013"
-                    Point2="0,18.966664745013"
-                    Point3="4,18.966664745013" />
-                  <mssgle:LineSegment
-                    End="4.91666594023513,18.966664745013" />
-                  <mssgle:CubicBezierSegment
-                    Point1="4.91666594023513,18.966664745013"
-                    Point2="8.91666594023513,18.966664745013"
-                    Point3="8.91666594023513,22.966664745013" />
-                  <mssgle:LineSegment
-                    End="8.91666594023513,30.433329490026" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Attività Flusso di dati.Paths[Output aggregazione 1]"
-          TopLeft="287.062490654178,401.46664955775">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,35.7666662327449"
-              Start="0,0"
-              End="0,28.2666662327449">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.2666662327449" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Attività Flusso di dati.Paths[crime gravity]"
           TopLeft="154.416663369785,128.016661738555">
           <EdgeLayout.Curve>
@@ -1938,6 +2517,274 @@
             <mssgm:EdgeLabel
               BoundingBox="-35.7215429128706,26.1416650704543,58.9430859375,11.384765625"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="208,42.6666666666667"
+          Id="Package\Attività Flusso di dati\Suddivisione condizionale 1"
+          TopLeft="168.124992484227,352.949983170033" />
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Output colonna derivata]"
+          TopLeft="274.479158494311,320.866653401058">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32.0833297689754"
+              Start="0,0"
+              End="0,24.5833297689754">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.5833297689754" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="144,42.6666666666667"
+          Id="Package\Attività Flusso di dati\Aggregazione"
+          TopLeft="35.6249984074385,453.333317216238" />
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[stolen]"
+          TopLeft="238.791659150894,395.6166498367">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-131.166660743455,57.7166673795383"
+              Start="0,0"
+              End="-131.166660743455,50.2166673795383">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.3510181001185" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.3510181001185"
+                    Point2="0,23.3510181001185"
+                    Point3="-4,23.3510181001185" />
+                  <mssgle:LineSegment
+                    End="-127.166660743455,23.3510181001185" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-127.166660743455,23.3510181001185"
+                    Point2="-131.166660743455,23.3510181001185"
+                    Point3="-131.166660743455,27.3510181001185" />
+                  <mssgle:LineSegment
+                    End="-131.166660743455,50.2166673795383" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-79.2853420904776,28.3510181001185,27.4040234375,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="152,42.6666666666667"
+          Id="Package\Attività Flusso di dati\Aggregazione 1"
+          TopLeft="314.87498616986,456.749986207486" />
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[not stolen]"
+          TopLeft="305.45832581756,395.6166498367">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="85.4166603522998,61.133336370786"
+              Start="0,0"
+              End="85.4166603522998,53.633336370786">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.7333345622264" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.7333345622264"
+                    Point2="0,24.7333345622264"
+                    Point3="4,24.7333345622264" />
+                  <mssgle:LineSegment
+                    End="81.4166603522998,24.7333345622264" />
+                  <mssgle:CubicBezierSegment
+                    Point1="81.4166603522998,24.7333345622264"
+                    Point2="85.4166603522998,24.7333345622264"
+                    Point3="85.4166603522998,28.7333345622264" />
+                  <mssgle:LineSegment
+                    End="85.4166603522998,53.633336370786" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="20.4347754886499,29.7333345622264,44.547109375,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="149.333333333334,42.6666666666667"
+          Id="Package\Attività Flusso di dati\Ordinamento 2"
+          TopLeft="27.4999987706542,531.333315976461" />
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Output aggregazione 1]"
+          TopLeft="104.89583192238,495.999983882905">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35.3333320935566"
+              Start="0,0"
+              End="0,27.8333320935566">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.8333320935566" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="149.333333333334,42.6666666666667"
+          Id="Package\Attività Flusso di dati\Ordinamento 3"
+          TopLeft="314.374985946343,527.98331842502" />
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Output aggregazione 11]"
+          TopLeft="389.958319391435,499.416652874152">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28.5666655508675"
+              Start="0,0"
+              End="0,21.0666655508675">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.0666655508675" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="138,42.6666666666667"
+          Id="Package\Attività Flusso di dati\Merge join 1"
+          TopLeft="178.749992009253,617.133315604528" />
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Output ordinamento2]"
+          TopLeft="102.166665437321,573.999982643128">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="145.583326571932,43.1333329614004"
+              Start="0,0"
+              End="145.583326571932,35.6333329614004">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5666664807002" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.5666664807002"
+                    Point2="0,21.5666664807002"
+                    Point3="4,21.5666664807002" />
+                  <mssgle:LineSegment
+                    End="141.583326571932,21.5666664807002" />
+                  <mssgle:CubicBezierSegment
+                    Point1="141.583326571932,21.5666664807002"
+                    Point2="145.583326571932,21.5666664807002"
+                    Point3="145.583326571932,25.5666664807002" />
+                  <mssgle:LineSegment
+                    End="145.583326571932,35.6333329614004" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Output ordinamento3]"
+          TopLeft="389.041652613009,570.649985091687">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-119.62499393709,46.4833305128417"
+              Start="0,0"
+              End="-119.62499393709,38.9833305128417">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.5703421666425" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.5703421666425"
+                    Point2="0,27.5703421666425"
+                    Point3="-4,27.5703421666425" />
+                  <mssgle:LineSegment
+                    End="-115.62499393709,27.5703421666425" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-115.62499393709,27.5703421666425"
+                    Point2="-119.62499393709,27.5703421666425"
+                    Point3="-119.62499393709,31.5703421666425" />
+                  <mssgle:LineSegment
+                    End="-119.62499393709,38.9833305128417" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="184,42.6666666666667"
+          Id="Package\Attività Flusso di dati\Destinazione file flat 1"
+          TopLeft="181.874991869554,688.733316100439" />
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Output merge join1]"
+          TopLeft="247.749992009253,659.799982271195">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="26.1249998603016,28.933333829244"
+              Start="0,0"
+              End="26.1249998603016,21.433333829244">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.466666914622" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.466666914622"
+                    Point2="0,14.466666914622"
+                    Point3="4,14.466666914622" />
+                  <mssgle:LineSegment
+                    End="22.1249998603016,14.466666914622" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.1249998603016,14.466666914622"
+                    Point2="26.1249998603016,14.466666914622"
+                    Point3="26.1249998603016,18.466666914622" />
+                  <mssgle:LineSegment
+                    End="26.1249998603016,21.433333829244" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

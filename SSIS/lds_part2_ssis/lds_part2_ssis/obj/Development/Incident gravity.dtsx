@@ -11,8 +11,8 @@
   DTS:LocaleID="1040"
   DTS:ObjectName="Incident gravity"
   DTS:PackageType="5"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{4BBA4994-53AD-4B39-9481-8857CDB244C5}">
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{02DAC189-4BCC-4A02-BD46-D87414771355}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -326,7 +326,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAttPXBMzooUyaeFXdhLsdHwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABHXPSveuPS3e9e4+dMEe/hmtqH4tFUtJsyrT6RESaPngAAAAAOgAAAAAIAACAAAAAIujEOwM+aClWr/2VVHJhvbkr86OL/GDP+PWmWdaUTeiAAAAAH5aqxQMyjeM3L+b2lSi/RnwFubizHB+eTjNLY1BDWckAAAACtB6bYTLWWwWUYcyV7hpHzQWy068qSADmkc8lGSPP3OXfu9AUT1nAgO/JekkAzyhQrgYYlblKbNeIUIVuGEvad</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO9pJqhLFP0Kb1exFA4w6cgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABnXg7xC346VfytcdGZjvt+Wr+qhTRFAop1m/acUBvmkgAAAAAOgAAAAAIAACAAAACOEnSDy7LELEdbhbEjXoipS08lL1U4HRFgs7POYMd9KyAAAADbSdvoCYWXQBejXaqUpNtSJ1QADpZ7XA2wlaE10JkTjEAAAAAz+l0YqE56YOYqCKl0BsrJyEW1bhH8vwDAM7iAatDRwHAPNKouOzjmL/z2O/EYcx+TZly4dOOu7OkO97nBUJVn</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1639,17 +1639,75 @@
           Id="Package\Attività Flusso di dati\Custody_incident"
           TopLeft="104.999995306134,19.4999990701676" />
         <NodeLayout
-          Size="97.3333333333334,42.6666666666667"
-          Id="Package\Attività Flusso di dati\gun"
-          TopLeft="347.49998446554,66.2999968385698" />
+          Size="149.333333333334,42.6666666666667"
+          Id="Package\Attività Flusso di dati\Ordinamento 1"
+          TopLeft="338.749984856695,132.59999367714" />
+        <NodeLayout
+          Size="158.666666666667,42.6666666666667"
+          Id="Package\Attività Flusso di dati\Colonna derivata"
+          TopLeft="197.499991171062,278.199986734391" />
+        <NodeLayout
+          Size="129.333333333334,42.6666666666667"
+          Id="Package\Attività Flusso di dati\Merge join"
+          TopLeft="211.87499052845,203.449990298748" />
+        <NodeLayout
+          Size="168,42.6666666666667"
+          Id="Package\Attività Flusso di dati\Colonna derivata 1"
+          TopLeft="204.374990863726,437.233315790495" />
         <NodeLayout
           Size="141.333333333334,42.6666666666667"
           Id="Package\Attività Flusso di dati\Ordinamento"
           TopLeft="71.2499968148769,170.299991879464" />
         <NodeLayout
-          Size="149.333333333334,42.6666666666667"
-          Id="Package\Attività Flusso di dati\Ordinamento 1"
-          TopLeft="338.749984856695,132.59999367714" />
+          Size="97.3333333333334,42.6666666666667"
+          Id="Package\Attività Flusso di dati\gun"
+          TopLeft="347.49998446554,66.2999968385698" />
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\Attività Flusso di dati\Destinazione file flat"
+          TopLeft="195.624991254881,533.433314922651" />
+        <NodeLayout
+          Size="161.333333333334,42.6666666666667"
+          Id="Package\Attività Flusso di dati\crime gravity &gt; 1"
+          TopLeft="73.7499967031182,85.3499950718882" />
+        <NodeLayout
+          Size="144,42.6666666666667"
+          Id="Package\Attività Flusso di dati\Aggregazione"
+          TopLeft="213.749990444631,358.799982891083" />
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Output origine OLE DB1]"
+          TopLeft="184.999995306134,62.1666657368342">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-30.5833319363496,23.183329335054"
+              Start="0,0"
+              End="-30.5833319363496,15.683329335054">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.59166466752699" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.59166466752699"
+                    Point2="0,11.591664667527"
+                    Point3="-4,11.591664667527" />
+                  <mssgle:LineSegment
+                    End="-26.5833319363496,11.591664667527" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-26.5833319363496,11.591664667527"
+                    Point2="-30.5833319363496,11.591664667527"
+                    Point3="-30.5833319363496,15.591664667527" />
+                  <mssgle:LineSegment
+                    End="-30.5833319363496,15.683329335054" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Attività Flusso di dati.Paths[Output origine OLE DB]"
           TopLeft="396.166651132207,108.966663505236">
@@ -1676,38 +1734,6 @@
                     Point3="17.2500003911555,15.8166650859515" />
                   <mssgle:LineSegment
                     End="17.2500003911555,16.1333301719031" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="129.333333333334,42.6666666666667"
-          Id="Package\Attività Flusso di dati\Merge join"
-          TopLeft="211.87499052845,203.449990298748" />
-        <EdgeLayout
-          Id="Package\Attività Flusso di dati.Paths[Output ordinamento]"
-          TopLeft="212.58333014821,180.949990298748">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="43.7361048246839,22.5"
-              Start="0,0"
-              End="43.7361048246839,15">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="39.7361048246839,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="39.7361048246839,0"
-                    Point2="43.7361048246839,0"
-                    Point3="43.7361048246839,4" />
-                  <mssgle:LineSegment
-                    End="43.7361048246839,15" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1750,10 +1776,34 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="158.666666666667,42.6666666666667"
-          Id="Package\Attività Flusso di dati\Colonna derivata"
-          TopLeft="197.499991171062,278.199986734391" />
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Output ordinamento]"
+          TopLeft="212.58333014821,180.949990298748">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="43.7361048246839,22.5"
+              Start="0,0"
+              End="43.7361048246839,15">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="39.7361048246839,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="39.7361048246839,0"
+                    Point2="43.7361048246839,0"
+                    Point3="43.7361048246839,4" />
+                  <mssgle:LineSegment
+                    End="43.7361048246839,15" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Attività Flusso di dati.Paths[Output merge join]"
           TopLeft="276.687490849756,246.116656965415">
@@ -1776,72 +1826,20 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="161.333333333334,42.6666666666667"
-          Id="Package\Attività Flusso di dati\crime gravity &gt; 1"
-          TopLeft="73.7499967031182,85.3499950718882" />
         <EdgeLayout
-          Id="Package\Attività Flusso di dati.Paths[crime gravity]"
-          TopLeft="154.416663369785,128.016661738555">
+          Id="Package\Attività Flusso di dati.Paths[Output colonna derivata1]"
+          TopLeft="285.66665772597,479.899982457162">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-12.4999998882413,42.2833301409086"
+              EndConnector="0,53.5333324654898"
               Start="0,0"
-              End="-12.4999998882413,34.7833301409086">
+              End="0,46.0333324654898">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.1416650704543" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.1416650704543"
-                    Point2="0,21.1416650704543"
-                    Point3="-4,21.1416650704543" />
-                  <mssgle:LineSegment
-                    End="-8.49999988824126,21.1416650704543" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-8.49999988824126,21.1416650704543"
-                    Point2="-12.4999998882413,21.1416650704543"
-                    Point3="-12.4999998882413,25.1416650704543" />
-                  <mssgle:LineSegment
-                    End="-12.4999998882413,34.7833301409086" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-35.7215429128706,26.1416650704543,58.9430859375,11.384765625"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Attività Flusso di dati.Paths[Output origine OLE DB1]"
-          TopLeft="184.999995306134,62.1666657368342">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-30.5833319363496,23.183329335054"
-              Start="0,0"
-              End="-30.5833319363496,15.683329335054">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,7.59166466752699" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,7.59166466752699"
-                    Point2="0,11.591664667527"
-                    Point3="-4,11.591664667527" />
-                  <mssgle:LineSegment
-                    End="-26.5833319363496,11.591664667527" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-26.5833319363496,11.591664667527"
-                    Point2="-30.5833319363496,11.591664667527"
-                    Point3="-30.5833319363496,15.591664667527" />
-                  <mssgle:LineSegment
-                    End="-30.5833319363496,15.683329335054" />
+                    End="0,46.0333324654898" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1850,10 +1848,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="144,42.6666666666667"
-          Id="Package\Attività Flusso di dati\Aggregazione"
-          TopLeft="213.749990444631,358.799982891083" />
         <EdgeLayout
           Id="Package\Attività Flusso di dati.Paths[Output colonna derivata]"
           TopLeft="276.833324504396,320.866653401057">
@@ -1888,10 +1882,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="168,42.6666666666667"
-          Id="Package\Attività Flusso di dati\Colonna derivata 1"
-          TopLeft="204.374990863726,437.233315790495" />
         <EdgeLayout
           Id="Package\Attività Flusso di dati.Paths[Output aggregazione 1]"
           TopLeft="287.062490654178,401.46664955775">
@@ -1914,30 +1904,40 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="174.666666666667,42.6666666666667"
-          Id="Package\Attività Flusso di dati\Destinazione file flat"
-          TopLeft="195.624991254881,533.433314922651" />
         <EdgeLayout
-          Id="Package\Attività Flusso di dati.Paths[Output colonna derivata1]"
-          TopLeft="285.66665772597,479.899982457162">
+          Id="Package\Attività Flusso di dati.Paths[crime gravity]"
+          TopLeft="154.416663369785,128.016661738555">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,53.5333324654898"
+              EndConnector="-12.4999998882413,42.2833301409086"
               Start="0,0"
-              End="0,46.0333324654898">
+              End="-12.4999998882413,34.7833301409086">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,46.0333324654898" />
+                    End="0,17.1416650704543" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.1416650704543"
+                    Point2="0,21.1416650704543"
+                    Point3="-4,21.1416650704543" />
+                  <mssgle:LineSegment
+                    End="-8.49999988824126,21.1416650704543" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-8.49999988824126,21.1416650704543"
+                    Point2="-12.4999998882413,21.1416650704543"
+                    Point3="-12.4999998882413,25.1416650704543" />
+                  <mssgle:LineSegment
+                    End="-12.4999998882413,34.7833301409086" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-35.7215429128706,26.1416650704543,58.9430859375,11.384765625"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

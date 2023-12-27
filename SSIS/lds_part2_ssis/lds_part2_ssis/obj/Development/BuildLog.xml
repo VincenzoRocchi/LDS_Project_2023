@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>lds_part2_ssis</Name>
-    <LastWriteTime>2023-12-14T16:16:05.9233839Z</LastWriteTime>
+    <LastWriteTime>2023-12-21T16:31:42.6521579Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -18,7 +18,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Incident gravity.dtsx</Name>
-      <LastWriteTime>2023-12-14T16:22:34.2097433Z</LastWriteTime>
+      <LastWriteTime>2023-12-21T16:31:42.6191673Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Incident gravity 1.dtsx</Name>
+      <LastWriteTime>2023-12-21T16:32:04.0109896Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
