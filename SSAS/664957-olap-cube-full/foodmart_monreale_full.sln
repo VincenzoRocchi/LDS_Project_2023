@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "foodmart_monreale_full", "foodmart_monreale_full\foodmart_monreale_full.dwproj", "{67A11D1D-17D0-44D9-B081-952C350868FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67A11D1D-17D0-44D9-B081-952C350868FC}.Development|Default.ActiveCfg = Development
+		{67A11D1D-17D0-44D9-B081-952C350868FC}.Development|Default.Build.0 = Development
+		{67A11D1D-17D0-44D9-B081-952C350868FC}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4A6EEF7-538C-4BBA-B894-F0DE7A76749C}
+	EndGlobalSection
+EndGlobal
