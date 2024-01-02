@@ -35,8 +35,6 @@ if __name__ == '__main__':
 
     geo = rg.RGeocoder(mode=2, verbose=True, stream=io.StringIO(open(r'C:\Users\Vincenzo\Projects\LDS_Project_23-24\DATA\uscities_rg.csv', encoding='utf-8').read()))
 
-    # ... [previous code remains unchanged]
-
     # Create a dictionary to map unique city-state-country combinations to GeographyID
     geography_id_dict = {}
 

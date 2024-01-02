@@ -196,35 +196,37 @@ def populate_participant_from_csv_batch(file_path, batch_size=1000):
             # Update the progress bar
             pbar.update(len(batch))
 
-# Connection data
-server = 'tcp:lds.di.unipi.it'
-username = 'Group_ID_183'
-password = 'TH023H6M'
-database = 'Group_ID_183_DB'
+if __name__ == '__main__':
+    
+    # Connection data
+    server = 'tcp:lds.di.unipi.it'
+    username = 'Group_ID_183'
+    password = 'TH023H6M'
+    database = 'Group_ID_183_DB'
 
-# Connection string
-conn_str = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};DATABASE={database};UID={username};PWD={password}'
+    # Connection string
+    conn_str = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};DATABASE={database};UID={username};PWD={password}'
 
-conn = pyodbc.connect(conn_str)
-cursor = conn.cursor()
+    conn = pyodbc.connect(conn_str)
+    cursor = conn.cursor()
 
-delete_table_contents(conn, 'Geography') # Delete the contents of the table before populating it
-populate_geography_from_csv_batch('DATA/Geography.csv')
+    delete_table_contents(conn, 'Geography') # Delete the contents of the table before populating it
+    populate_geography_from_csv_batch('DATA/Geography.csv')
 
-delete_table_contents(conn, 'Gun')  # Delete the contents of the table before populating it
-populate_gun_from_csv_batch('DATA/Gun.csv')
+    delete_table_contents(conn, 'Gun')  # Delete the contents of the table before populating it
+    populate_gun_from_csv_batch('DATA/Gun.csv')
 
-delete_table_contents(conn, 'Date')  # Delete the contents of the table before populating it
-populate_date_from_csv_batch('DATA/Date.csv')
+    delete_table_contents(conn, 'Date')  # Delete the contents of the table before populating it
+    populate_date_from_csv_batch('DATA/Date.csv')
 
-delete_table_contents(conn, 'Incident')  # Delete the contents of the table before populating it
-populate_incident_from_csv_batch('DATA/Incident.csv',)
+    delete_table_contents(conn, 'Incident')  # Delete the contents of the table before populating it
+    populate_incident_from_csv_batch('DATA/Incident.csv',)
 
-delete_table_contents(conn, 'Participant')  # Delete the contents of the table before populating it
-populate_participant_from_csv_batch('DATA/Partecipant.csv')
+    delete_table_contents(conn, 'Participant')  # Delete the contents of the table before populating it
+    populate_participant_from_csv_batch('DATA/Partecipant.csv')
 
-delete_table_contents(conn, 'Custody')  # Delete the contents of the table before populating it
-populate_custody_from_csv_batch('DATA/Custody.csv')
+    delete_table_contents(conn, 'Custody')  # Delete the contents of the table before populating it
+    populate_custody_from_csv_batch('DATA/Custody.csv')
 
-cursor.close()
-conn.close()
+    cursor.close()
+    conn.close()

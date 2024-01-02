@@ -50,6 +50,7 @@ def update_column_from_csv_batch(cursor, table_name, column_name, file_path, bat
 
 
 if __name__ == '__main__':
+    
     # Connection data
     server = 'tcp:lds.di.unipi.it'
     username = 'Group_ID_183'

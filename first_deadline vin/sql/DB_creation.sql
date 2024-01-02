@@ -5,36 +5,36 @@ CREATE TABLE Custody (
     gun_id INT,
     geo_id INT,
     date_id INT,
-    crime_gravity DECIMAL(18, 2), -- Adjust the data type as needed
-    -- Add other columns as needed
+    crime_gravity DECIMAL(18, 2), 
+    incident_id INT,
 );
 GO
 
 -- Create the Geography table
 CREATE TABLE Geography (
     geo_id INT PRIMARY KEY,
-    latitude DECIMAL(9, 6), -- Adjust the data type as needed
-    longitude DECIMAL(9, 6), -- Adjust the data type as needed
-    city NVARCHAR(255), -- Adjust the data type as needed
-    state NVARCHAR(255), -- Adjust the data type as needed
-    continent NVARCHAR(255), -- Adjust the data type as needed
-    -- Add other columns as needed
+    latitude DECIMAL(9, 6), 
+    longitude DECIMAL(9, 6), 
+    city NVARCHAR(255), 
+    state NVARCHAR(255), 
+    continent NVARCHAR(255), 
+
 );
 GO
 
 -- Create the Gun table
 CREATE TABLE Gun (
     gun_id INT PRIMARY KEY,
-    is_stolen BIT, -- Boolean data type, 0 or 1
-    gun_type NVARCHAR(255), -- Adjust the data type as needed
-    -- Add other columns as needed
+    is_stolen BIT, 
+    gun_type NVARCHAR(255), 
+
 );
 GO
 
 -- Create the Date table
 CREATE TABLE Date (
     date_id INT PRIMARY KEY,
-    date DATE, -- Adjust the data type as needed
+    date DATE, 
     day INT,
     month INT,
     year INT,
@@ -46,18 +46,18 @@ GO
 -- Create the Incident table
 CREATE TABLE Incident (
     incident_id INT PRIMARY KEY,
-    -- Add other columns as needed
+
 );
 GO
 
 -- Create the Participant table
 CREATE TABLE Participant (
     participant_id INT PRIMARY KEY,
-    age_group INT, -- Adjust the data type as needed
-    gender NVARCHAR(10), -- Adjust the data type as needed
-    status INT, -- Adjust the data type as needed
-    type INT, --Ajust the data type as needed
-	-- Add other columns as needed
+    age_group INT, 
+    gender NVARCHAR(10), 
+    status INT, 
+    type INT, 
+
 );
 GO
 
@@ -84,4 +84,10 @@ ALTER TABLE Custody
 ADD CONSTRAINT FK_Custody_Date
 FOREIGN KEY (date_id)
 REFERENCES Date(date_id);
+GO
+
+ALTER TABLE Custody
+ADD CONSTRAINT FK_Custody_Incident
+FOREIGN KEY (incident_id)
+REFERENCES Incident(incident_id);
 GO
