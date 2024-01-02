@@ -4,8 +4,8 @@ if __name__ == '__main__':
     import io
 
     # Define the input and output file paths
-    input_file = 'DATA/uscities.csv'
-    output_file = 'DATA/uscities_rg.csv'
+    input_file = r'C:\Users\Vincenzo\Projects\LDS_Project_23-24\DATA\uscities.csv'
+    output_file = r'C:\Users\Vincenzo\Projects\LDS_Project_23-24\DATA\uscities_rg.csv'
 
     # Define the header mapping
     header_mapping = {
@@ -33,7 +33,7 @@ if __name__ == '__main__':
     
     print("CSV transformation complete.")
 
-    geo = rg.RGeocoder(mode=2, verbose=True, stream=io.StringIO(open('DATA/uscities_rg.csv', encoding='utf-8').read()))
+    geo = rg.RGeocoder(mode=2, verbose=True, stream=io.StringIO(open(r'C:\Users\Vincenzo\Projects\LDS_Project_23-24\DATA\uscities_rg.csv', encoding='utf-8').read()))
 
     # ... [previous code remains unchanged]
 
@@ -41,7 +41,7 @@ if __name__ == '__main__':
     geography_id_dict = {}
 
     # Open the CSV file for writing
-    with open('DATA/Geography.csv', 'w', newline='') as geo_csv:
+    with open(r'C:\Users\Vincenzo\Projects\LDS_Project_23-24\DATA\Geography.csv', 'w', newline='') as geo_csv:
         # Remove the contents of the CSV file
         geo_csv.truncate(0)
         fieldnames = ['GeographyID', 'Latitude', 'Longitude', 'City', 'State', 'Continent']
@@ -50,7 +50,7 @@ if __name__ == '__main__':
 
         # Extract unique coordinates from the Police.csv
         unique_coordinates = set()
-        with open('DATA/Police.csv', 'r') as csv_file:
+        with open(r'C:\Users\Vincenzo\Projects\LDS_Project_23-24\DATA\Police.csv', 'r') as csv_file:
             csv_reader = csv.reader(csv_file)
             next(csv_reader)  # Skip the header row
 
