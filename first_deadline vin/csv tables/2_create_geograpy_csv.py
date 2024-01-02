@@ -35,7 +35,9 @@ if __name__ == '__main__':
 
     geo = rg.RGeocoder(mode=2, verbose=True, stream=io.StringIO(open('DATA/uscities_rg.csv', encoding='utf-8').read()))
 
-    # Create a dictionary to map geography_id
+    # ... [previous code remains unchanged]
+
+    # Create a dictionary to map unique city-state-country combinations to GeographyID
     geography_id_dict = {}
 
     # Open the CSV file for writing
@@ -59,10 +61,28 @@ if __name__ == '__main__':
         # Perform a single search in reverse geocoder for all unique coordinates
         results = geo.query(list(unique_coordinates))
 
+        geography_id = 1  # Initialize GeographyID
+
         # Write data to the CSV file
-        for i, row in enumerate(results):
-            unique_coordinates = list(unique_coordinates)
-            latitude, longitude = unique_coordinates[i]
-            city, state, continent = row.get('name', ''), row.get('admin1', ''), row.get('cc', '')
-            geography_id = i+1  # Generate a unique geography_id
-            geo_writer.writerow({'GeographyID': geography_id, 'Latitude': latitude, 'Longitude': longitude, 'City': city, 'State': state, 'Continent': continent})
+        for result in results:
+            # Get the city, state, and continent information
+            city, state, continent = result.get('name', ''), result.get('admin1', ''), result.get('cc', '')
+            # Create a unique key for each city-state-country combination
+            unique_key = (city, state, continent)
+
+            # Check if this combination is already processed
+            if unique_key not in geography_id_dict:
+                # If not processed, add to the dictionary and write to CSV
+                geography_id_dict[unique_key] = geography_id
+                geo_writer.writerow({
+                    'GeographyID': geography_id,
+                    'Latitude': result['lat'],
+                    'Longitude': result['lon'],
+                    'City': city,
+                    'State': state,
+                    'Continent': continent
+                })
+                geography_id += 1
+
+    print("CSV processing complete.")
+
