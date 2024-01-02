@@ -63,24 +63,31 @@ if __name__ == '__main__':
     cursor = conn.cursor()
 
     try:
+
+        # cursor.execute('DELETE FROM Custody WHERE geo_id IN (SELECT GeographyID FROM Geography)')
+
         # Delete all data from the tables
-        cursor.execute('DELETE FROM Custody')
-        #cursor.execute('DELETE FROM Geography')
-        #cursor.execute('DELETE FROM Gun')
-        #cursor.execute('DELETE FROM Date')
-        #cursor.execute('DELETE FROM Incident')
-        #cursor.execute('DELETE FROM Participant')
+        # cursor.execute('DELETE FROM Custody')
+        cursor.execute('DELETE FROM Geography')
+        # cursor.execute('DELETE FROM Gun')
+        # cursor.execute('DELETE FROM Date')
+        # cursor.execute('DELETE FROM Incident')
+        # cursor.execute('DELETE FROM Participant')
 
         # Populate all tables using batch inserts
-        #populate_table_from_csv_batch(cursor, 'Geography', 'DATA/Geography.csv', batch_size=10000)
-        #populate_table_from_csv_batch(cursor, 'Gun', 'DATA/Gun.csv', batch_size=10000)
-        #populate_table_from_csv_batch(cursor, 'Date', 'DATA/Date.csv', batch_size=10000)
-        #populate_table_from_csv_batch(cursor, 'Incident', 'DATA/Incident.csv', batch_size=10000)
-        #populate_table_from_csv_batch(cursor, 'Participant', 'DATA/Participant.csv', batch_size=10000)
-        populate_table_from_csv_batch(cursor, 'Custody', 'DATA/Custody.csv', batch_size=10000)
+        populate_table_from_csv_batch(cursor, 'Geography', 'DATA/Geography.csv', batch_size=10000)
+        # populate_table_from_csv_batch(cursor, 'Gun', 'DATA/Gun.csv', batch_size=10000)
+        # populate_table_from_csv_batch(cursor, 'Date', 'DATA/Date.csv', batch_size=10000)
+        # populate_table_from_csv_batch(cursor, 'Incident', 'DATA/Incident.csv', batch_size=10000)
+        # populate_table_from_csv_batch(cursor, 'Participant', 'DATA/Participant.csv', batch_size=10000)
+        # populate_table_from_csv_batch(cursor, 'Custody', 'DATA/Custody.csv', batch_size=10000)
 
         # Commit once after all batches are processed
         conn.commit()
+
+    except pyodbc.Error as e:
+        print(f"Database error: {e}")
+
     finally:
         cursor.close()
         conn.close()
