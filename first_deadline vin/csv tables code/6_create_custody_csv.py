@@ -12,14 +12,14 @@ def calculate_crime_gravity(participant_age, participant_type, participant_statu
     crime_gravity = F1 * F2 * F3
     return crime_gravity
 
-with open('DATA\dict_partecipant_age.json', 'r') as age_file, \
-     open('DATA\dict_partecipant_status.json', 'r') as status_file, \
-     open('DATA\dict_partecipant_type.json', 'r') as type_file, \
-     open('DATA\Geography.csv', 'r') as geo_csv, \
-     open('DATA\Gun.csv', 'r') as gun_csv, \
-     open('DATA\Participant.csv', 'r') as participant_csv, \
-     open('DATA\Date.csv', 'r') as date_csv, \
-     open('DATA\Incident.csv', 'r') as incident_csv:
+with open(r'C:\Users\Vincenzo\Projects\LDS_Project_23-24\DATA\dict_partecipant_age.json', 'r') as age_file, \
+     open(r'C:\Users\Vincenzo\Projects\LDS_Project_23-24\DATA\dict_partecipant_status.json', 'r') as status_file, \
+     open(r'C:\Users\Vincenzo\Projects\LDS_Project_23-24\DATA\dict_partecipant_type.json', 'r') as type_file, \
+     open(r'C:\Users\Vincenzo\Projects\LDS_Project_23-24\DATA\Geography.csv', 'r') as geo_csv, \
+     open(r'C:\Users\Vincenzo\Projects\LDS_Project_23-24\DATA\Gun.csv', 'r') as gun_csv, \
+     open(r'C:\Users\Vincenzo\Projects\LDS_Project_23-24\DATA\Participant.csv', 'r') as participant_csv, \
+     open(r'C:\Users\Vincenzo\Projects\LDS_Project_23-24\DATA\Date.csv', 'r') as date_csv, \
+     open(r'C:\Users\Vincenzo\Projects\LDS_Project_23-24\DATA\Incident.csv', 'r') as incident_csv:
 
     age_data = json.load(age_file)
     status_data = json.load(status_file)
@@ -34,8 +34,8 @@ with open('DATA\dict_partecipant_age.json', 'r') as age_file, \
     custody_id_set = set()
     # Load existing participant IDs from Participant.csv
 
-    with open('DATA\Police.csv', 'r') as csv_file, \
-        open('DATA\Custody.csv', 'w', newline='') as custody_csv:
+    with open(r'C:\Users\Vincenzo\Projects\LDS_Project_23-24\DATA\Police.csv', 'r') as csv_file, \
+        open(r'C:\Users\Vincenzo\Projects\LDS_Project_23-24\DATA\Custody.csv', 'w', newline='') as custody_csv:
 
         csv_reader = csv.reader(csv_file)
         custody_writer = csv.writer(custody_csv)
