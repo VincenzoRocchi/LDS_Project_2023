@@ -25,6 +25,7 @@ with open('DATA/dict_partecipant_age.json', 'r') as age_file, \
     status_data = json.load(status_file)
     type_data = json.load(type_file)
 
+    # creating dictonaries for appending keys in the custody.csv
     geo_data = { (row['Latitude'], row['Longitude']): row['GeographyID'] for row in csv.DictReader(geo_csv) }
     gun_data = { (int(row['IsStolen']), row['GunType']): row['GunID'] for row in csv.DictReader(gun_csv) }
     participant_data = { (int(row['AgeGroup']), row['Gender'], int(row['Status']),int(row['Type'])): row['ParticipantID'] for row in csv.DictReader(participant_csv) }
