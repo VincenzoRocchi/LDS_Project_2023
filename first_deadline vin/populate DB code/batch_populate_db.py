@@ -64,9 +64,6 @@ if __name__ == '__main__':
     cursor = conn.cursor()
 
     try:
-
-        # cursor.execute('DELETE FROM Custody WHERE geo_id IN (SELECT GeographyID FROM Geography)')
-
         # Delete all data from the tables
         # cursor.execute('DELETE FROM Custody')
         cursor.execute('DELETE FROM Geography')
