@@ -12,10 +12,10 @@
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>Date</ID>
+        <ID>Dim Geography</ID>
       </Dimension>
       <Dimension>
-        <ID>Dim Geography</ID>
+        <ID>Date</ID>
       </Dimension>
       <Dimension>
         <ID>Gun</ID>
@@ -25,9 +25,6 @@
       </Dimension>
       <Dimension>
         <ID>Participant</ID>
-      </Dimension>
-      <Dimension>
-        <ID>New Dim Date</ID>
       </Dimension>
     </Dimensions>
     <Cubes>

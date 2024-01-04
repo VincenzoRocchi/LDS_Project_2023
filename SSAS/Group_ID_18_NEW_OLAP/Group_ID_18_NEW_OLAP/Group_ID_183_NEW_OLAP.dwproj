@@ -20,28 +20,24 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Dim Date.dim</Name>
-      <FullPath>Dim Date.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Dim Geography.dim</Name>
       <FullPath>Dim Geography.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Gun.dim</Name>
-      <FullPath>Gun.dim</FullPath>
+      <Name>Dim Date.dim</Name>
+      <FullPath>Dim Date.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Incident.dim</Name>
-      <FullPath>Incident.dim</FullPath>
+      <Name>Dim Gun.dim</Name>
+      <FullPath>Dim Gun.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Participant.dim</Name>
-      <FullPath>Participant.dim</FullPath>
+      <Name>Dim Incident.dim</Name>
+      <FullPath>Dim Incident.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>New Dim Date.dim</Name>
-      <FullPath>New Dim Date.dim</FullPath>
+      <Name>Dim Participant.dim</Name>
+      <FullPath>Dim Participant.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

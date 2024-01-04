@@ -1,6 +1,6 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="284fa844-fd58-45fd-a34f-b5ad75f97574" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="89531854-a11a-4340-9571-55c107420480" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Gun</ID>
-  <Name>Gun</Name>
+  <Name>Dim Gun</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -42,37 +42,37 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d2588bbd-c44c-44ec-b281-4a366cf38753">
-    <DataSourceViewID>Ldsdiunipiit</DataSourceViewID>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="991a64b8-9f6f-4e12-9069-889a32321066">
+    <DataSourceViewID>DB_183_DS_NEW</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="4ad3d860-bc2a-49ac-a793-a4a061489c6d">
+  <ErrorConfiguration dwd:design-time-name="2c89e233-b6ae-48dd-9ade-c28f07d1443c">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="5604550b-87af-4aa4-b28b-ca62491b7edc">
+    <Attribute dwd:design-time-name="d0060e66-82a5-40a5-afbd-4ba8a8791efa">
       <ID>Gun Id</ID>
       <Name>Gun Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="379ff6c3-84c5-48c4-a41c-2ef8010dd123">
+        <KeyColumn dwd:design-time-name="d3bb2fdf-5cb5-45ab-8149-57ca24de6997">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="294f191b-1e57-41b6-a93a-d4775492ddb3">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e24c6f1a-d100-4a2f-93ba-24e88db6cb5e">
             <TableID>Group_ID_183_Gun</TableID>
             <ColumnID>gun_id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="23e0f3fc-c550-4db8-9916-1b468ae22238">
+        <AttributeRelationship dwd:design-time-name="0e40f666-4374-4cb8-9e90-d97f469e859e">
           <AttributeID>Is Stolen</AttributeID>
           <Name>Is Stolen</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="304408bd-eda2-45ad-b255-51f1cfcbf45c">
+        <AttributeRelationship dwd:design-time-name="56c33e6f-1f81-4d73-8023-ad1e4c6bb730">
           <AttributeID>Gun Type</AttributeID>
           <Name>Gun Type</Name>
         </AttributeRelationship>
@@ -81,13 +81,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3697f49e-ce89-4bae-8830-b96c0ad72c31">
+    <Attribute dwd:design-time-name="cfb97c42-a103-4a35-8c5b-f193a614bf04">
       <ID>Is Stolen</ID>
       <Name>Is Stolen</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f647e7f0-8107-4e48-a2c4-e7da91808a80">
+        <KeyColumn dwd:design-time-name="bfa12098-beef-48fe-a54f-25b180f54e44">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a20b101a-0fb1-404f-8baa-6a12a8989f10">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e80dcdcc-e3e4-4908-a0b4-a0e4797ebd48">
             <TableID>Group_ID_183_Gun</TableID>
             <ColumnID>is_stolen</ColumnID>
           </Source>
@@ -97,14 +97,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="26ab4df0-de50-4954-bb53-3cc274c68588">
+    <Attribute dwd:design-time-name="7f537a81-1213-4209-aacb-dbe294df1b21">
       <ID>Gun Type</ID>
       <Name>Gun Type</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f4916b01-2e38-4b2f-ae85-5e242d57d519">
+        <KeyColumn dwd:design-time-name="adb9e746-bf6e-46ce-8590-e1689d093b1d">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e8e4aa9-a5ff-4399-8573-3c8c788bb4ba">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0ccf1424-c977-4980-8507-ec87b096b224">
             <TableID>Group_ID_183_Gun</TableID>
             <ColumnID>gun_type</ColumnID>
           </Source>
