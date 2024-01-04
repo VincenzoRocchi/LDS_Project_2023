@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Group_ID_183_NEW_OLAP</Database>
+    <Server>http://lds.di.unipi.it/olap/msmdpump.dll</Server>
+    <ConnectionString>Data Source=http://lds.di.unipi.it/olap/msmdpump.dll;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>AoOcCr+Ylf4z3V35k03jCNw2nnE=1/3/2024 5:44:22 PM1/3/2024 5:44:22 PM</TimeStamp>
+        <ID>
+          <String>DB_183_DS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>XKEGZc46t92oxmnUdcWUueU/VW4=1/4/2024 2:33:11 PM1/4/2024 11:03:20 AM</TimeStamp>
+        <ID>
+          <String>DB_183_DS_NEW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>UePVjXCgupV4VPQ1xKercCjZvmk=1/4/2024 2:55:33 PM1/4/2024 11:27:33 AM</TimeStamp>
+        <ID>
+          <String>Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>UQWvuEIyv+Ty7Qhq49QGK4ZHUwM=1/4/2024 2:36:17 PM1/4/2024 1:26:30 PM</TimeStamp>
+        <ID>
+          <String>Dim Geography</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+q9Ay6JE2Tnbl0fa09KSwtod7KE=1/4/2024 2:36:42 PM1/4/2024 2:36:42 PM</TimeStamp>
+        <ID>
+          <String>Gun</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RcIKiCd/IrvlzaxuhvNdNcO0XfY=1/4/2024 2:36:42 PM1/4/2024 2:36:42 PM</TimeStamp>
+        <ID>
+          <String>Incident</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HtdJ6/obqSbkMHJBV9uDCEiqRKk=1/4/2024 2:36:42 PM1/4/2024 2:36:42 PM</TimeStamp>
+        <ID>
+          <String>Participant</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>F819lhfdHh1s+/lMSpWQYntvyDE=1/4/2024 3:04:03 PM1/4/2024 2:50:46 PM</TimeStamp>
+        <ID>
+          <String>New Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>kImtPQv/D7u+DRAET2HECHKp00o=1/4/2024 2:56:45 PM1/4/2024 2:56:45 PMRoY4kRI1gN1bF5A/IzR+lTvdST8=1/4/2024 2:56:45 PM1/4/2024 2:56:45 PM</TimeStamp>
+        <ID>
+          <String>DB_183_DS_NEW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>Q7zH+AjDYkLDivq/+WpxQ7HN/i4=1/3/2024 6:22:55 PM1/3/2024 5:43:43 PM</TimeStamp>
+      <ID>
+        <String>Group_ID_18_NEW_OLAP</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-01-04T14:04:19.27Z</LastDeployed>
+</DeploymentSnapshot>
