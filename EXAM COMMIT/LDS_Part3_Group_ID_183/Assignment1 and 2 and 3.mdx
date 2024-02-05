@@ -1,0 +1,42 @@
+with member YearCrimeGravity as 
+SUM(PERIODSTODATE([Dim Date].[Calendar hierarchy].[Year],[Dim Date].[Calendar hierarchy].currentmember),[Measures].[Crime Gravity])
+member YearCrimeGravityPrev as 
+SUM(PERIODSTODATE([Dim Date].[Calendar hierarchy].[Year],[Dim Date].[Calendar hierarchy].prevmember),[Measures].[Crime Gravity])
+member DiffCrimeGravity as
+YearCrimeGravity-YearCrimeGravityPrev
+member DiffPercCrimeGravity as
+DiffCrimeGravity/YearCrimeGravityPrev,format_string = 'Percent'
+
+select {DiffPercCrimeGravity,DiffCrimeGravity,YearCrimeGravity, YearCrimeGravityPrev} on columns,
+nonempty([Dim Date].[Calendar hierarchy].[Year]) on rows
+
+from DB_183_DS_NEW
+
+with member TotCrimeGravity as
+SUM([Dim Gun].[GunType].[Gun Type],[Measures].[Crime Gravity])
+member PercCrimeGravity as
+[Measures].[Crime Gravity]/TotCrimeGravity, format_string='Percent'
+
+select {[Measures].[Crime Gravity],PercCrimeGravity} on columns,
+(nonempty([Dim Gun].[GunType].[Gun Type])) on rows
+
+from DB_183_DS_NEW
+
+WITH
+  MEMBER [Measures].[AverageGravityScore] AS
+    Avg(
+      [Dim Geography].[State City hierarchy].[State],
+      [Measures].[Crime Gravity]
+    )
+
+SET [FilteredIncidents] AS
+  Filter(
+    [Dim Incident].[IncidHier].[Incident Id],
+    [Measures].[Crime Gravity] >= [Measures].[AverageGravityScore]
+  )
+
+SELECT
+  {[Measures].[Crime Gravity],[Measures].[AverageGravityScore]} ON COLUMNS,
+  [FilteredIncidents] ON ROWS
+FROM
+  DB_183_DS_NEW
