@@ -1,0 +1,12 @@
+Project Credentials
+Group_ID_183
+TH023H6M
+Group_ID_183_DB
+
+SSAS
+http://lds.di.unipi.it/olap/msmdpump.dll
+
+SSIS
+lds.di.unipi.it
+lds
+pisa
